@@ -18,7 +18,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (projectile web-mode elpy))))
+ '(package-selected-packages (quote (magit projectile web-mode elpy))))
 
 ;; Web-mode options
 (require 'web-mode)
@@ -49,3 +49,14 @@
 (setq web-mode-enable-css-colorization t)
 
 (require 'projectile)
+;;C-c p p  ;; switch projects
+(global-set-key (kbd "C-c p p") 'projectile-switch-project)
+;;C-c p f  ;; list project files
+(global-set-key (kbd "C-c p f") 'projectile--find-file)
+;;C-c p g  ;; grep project
+(global-set-key (kbd "C-c p g") 'projectile-grep)
+;; Set projects search path
+(setq projectile-project-search-path '("~/Gitlab/" "~/Github/"))
+
+;; Magit status shotcut
+(global-set-key (kbd "C-x g") ’magit-status)
