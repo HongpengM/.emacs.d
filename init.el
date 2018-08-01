@@ -59,4 +59,8 @@
 (setq projectile-project-search-path '("~/Gitlab/" "~/Github/"))
 
 ;; Magit status shotcut
-(global-set-key (kbd "C-x g") ’magit-status)
+(global-set-key (kbd "C-x g") 'magit-status)
+
+;; Jedi for python autocompletion
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
