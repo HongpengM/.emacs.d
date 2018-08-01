@@ -62,5 +62,13 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 
 ;; Jedi for python autocompletion
+;; install jedi server to start auto completion
+;; M-x jedi:install-server
+(setq python-environment-virualenv "/Users/k/anaconda3/bin/virtualenv")
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
+
+;; Add exec path from shell
+;; by Purcell
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
