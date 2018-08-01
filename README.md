@@ -120,6 +120,22 @@ Be sure to `M-x jedi:install-server` to enable jedi server for autocomplete
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 ```
+
+## 9 Install Material Theme
+emacs Material Theme maintained on https://github.com/cpaulik/emacs-material-theme
+By download 2 themes using wget
+```Shell
+wget https://raw.githubusercontent.com/cpaulik/emacs-material-theme/master/material-theme.el
+wget https://raw.githubusercontent.com/cpaulik/emacs-material-theme/master/material-light-theme.el
+```
+move 2 files to ~/.emacs.d/
+Add settings in `init.el`
+```elisp
+;; Material Theme
+(load-theme 'material t)
+;;(load-theme 'material-light t)
+```
+
 #Tips
 ### Fetch detached Emacs session
 ```Shell
