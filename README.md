@@ -106,6 +106,20 @@ Settings in `init.el`
 (global-set-key (kbd "C-x g") ’magit-status)
 ```
 
+
+## 8 Jedi
+Jedi is a package serves for python autocompletion
+`M-x package-install <RET> jedi <RET>`
+Be sure to `M-x jedi:install-server` to enable jedi server for autocomplete
+
+```Lisp
+;; Jedi for python autocompletion
+;; install jedi server to start auto completion
+;; M-x jedi:install-server
+(setq python-environment-virualenv "/Users/k/anaconda3/bin/virtualenv")
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+```
 #Tips
 ### Fetch detached Emacs session
 ```Shell
