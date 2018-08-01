@@ -136,7 +136,24 @@ Add settings in `init.el`
 ;;(load-theme 'material-light t)
 ```
 
-#Tips
+## 10 Markdown mode
+markdown-mode is maintained on https://github.com/jrblevin/markdown-mode
+download the stable .el file
+and add to `init.el`
+```elisp
+;; Add Markdown mode
+(add-to-list 'load-path "~/.emacs.d/")
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode"
+   "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+```
+
+# Tips
 ### Fetch detached Emacs session
 ```Shell
 fg %emacs

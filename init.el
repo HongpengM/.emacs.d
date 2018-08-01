@@ -6,6 +6,8 @@
   '(("gnu" . "http://elpa.gnu.org/packages/")
     ("marmalade" . "https://marmalade-repo.org/packages/")
     ("melpa" . "http://melpa.milkbox.net/packages/")))
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
 ;;Set url proxy method
 ;;(setq url-proxy-services
@@ -24,7 +26,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (magit projectile web-mode elpy))))
+ '(package-selected-packages (quote (markdown-mode magit projectile web-mode elpy)))
+ '(projectile-mode t nil (projectile)))
 
 ;; Web-mode options
 (require 'web-mode)
@@ -77,3 +80,20 @@
 ;; Material Theme
 (load-theme 'material t)
 ;;(load-theme 'material-light t)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; Add Markdown mode
+(add-to-list 'load-path "~/.emacs.d/")
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode"
+   "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
