@@ -12,6 +12,12 @@
 ;;      '(("no_proxy" . "^\\(localhost\\|10.*\\)")
 ;;	("http" . "127.0.0.1:1080")
 ;;	("https" . "127.0.0.1:1080")))
+
+;; Add exec path from shell
+;; by Purcell
+;;(when (memq window-system '(mac ns x))
+;;  (exec-path-from-shell-initialize))
+
 (elpy-enable)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -68,7 +74,6 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
-;; Add exec path from shell
-;; by Purcell
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
+;; Material Theme
+(load-theme 'material t)
+;;(load-theme 'material-light t)
