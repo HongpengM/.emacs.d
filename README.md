@@ -21,7 +21,7 @@ alias emacs="emacs -nw"%
 ```
 
 Add more repos in `init.el`
-```Lisp
+```elisp
 ;; Add more package resources
 (setq package-archives
   '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -68,7 +68,7 @@ And
 
 `M-x package-install <RET> web-mode <RET>`
 Settings in `init.el`
-```Lisp
+```elisp
 ;; Web-mode options                                                                                 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
@@ -87,7 +87,7 @@ Settings in `init.el`
 ## 6 projectile
 `M-x package-install <RET> projectile <RET>`
 Settings in `init.el`
-```Lisp
+```elisp
 ;;C-c p p  ;; switch projects
 (global-set-key (kbd "C-c p p") 'projectile-switch-project)
 ;;C-c p f  ;; list project files
@@ -112,7 +112,7 @@ Jedi is a package serves for python autocompletion
 `M-x package-install <RET> jedi <RET>`
 Be sure to `M-x jedi:install-server` to enable jedi server for autocomplete
 
-```Lisp
+```elisp
 ;; Jedi for python autocompletion
 ;; install jedi server to start auto completion
 ;; M-x jedi:install-server
