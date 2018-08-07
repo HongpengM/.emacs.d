@@ -1,6 +1,8 @@
 (require 'package)
 
-
+;;==============================
+;; Package Source
+;;==============================
 ;; Add more package resources
 (setq package-archives
   '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -26,9 +28,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (markdown-mode magit projectile web-mode elpy)))
- '(projectile-mode t nil (projectile)))
+ '(markdown-command "/usr/local/bin/preview")
+ '(package-selected-packages
+   (quote
+    (company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
+ '(projectile-mode t nil (projectile))
+ '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
+
+;; ==============================
+;; Add web-mode projectile
+;;==============================
 ;; Web-mode options
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
@@ -67,9 +77,17 @@
 ;; Set projects search path
 (setq projectile-project-search-path '("~/Gitlab/" "~/Github/"))
 
+;; ==============================
+;; Magit settings for Git
+;;==============================
+
 ;; Magit status shotcut
 (global-set-key (kbd "C-x g") 'magit-status)
 
+
+;;==============================
+;; Jedi: Python autocomplete
+;;==============================
 ;; Jedi for python autocompletion
 ;; install jedi server to start auto completion
 ;; M-x jedi:install-server
@@ -77,7 +95,10 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
+
+;;==============================
 ;; Material Theme
+;;==============================
 (load-theme 'material t)
 ;;(load-theme 'material-light t)
 (custom-set-faces
@@ -87,8 +108,12 @@
  ;; If there is more than one, they won't work right.
  )
 
+;;==============================
+;; Markdown and preview settings
+;;==============================
+
 ;; Add Markdown mode
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/markdown")
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
@@ -97,3 +122,45 @@
 (autoload 'gfm-mode "markdown-mode"
    "Major mode for editing GitHub Flavored Markdown files" t)
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+;; Add Markdown Preview parser C-c C-c p
+(custom-set-variables '(markdown-command "/usr/local/bin/macdown"))
+
+
+;;==============================
+;;     JavaScript Env Settings
+;;==============================
+;; Install JavaScript-mode
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+;; Better imenu
+(add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
+
+;; Js2-refactor and xref-js2
+(require 'js2-refactor)
+(require 'xref-js2)
+
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c C-r")
+(define-key js2-mode-map (kbd "C-k") #'js2r-kill)
+
+;; js-mode (which js2 is based on) binds "M-." which conflicts with xref, so
+;; unbind it.
+(define-key js-mode-map (kbd "M-.") nil)
+
+(add-hook 'js2-mode-hook (lambda ()
+			   (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
+
+;; Autocomplete
+(require 'company)
+(require 'company-tern)
+
+(add-to-list 'company-backends 'company-tern)
+(add-hook 'js2-mode-hook (lambda ()
+                           (tern-mode)
+                           (company-mode)))
+                           
+;; Disable completion keybindings, as we use xref-js2 instead
+(define-key tern-mode-keymap (kbd "M-.") nil)
+(define-key tern-mode-keymap (kbd "M-,") nil)
+

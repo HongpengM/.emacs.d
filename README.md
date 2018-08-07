@@ -153,6 +153,64 @@ and add to `init.el`
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 ```
 
+# Javascript Env
+
+## 1 js2-mode 
+Install `M-x package-install RET js2-mode RET`
+add in `init.el`
+```elisp
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+;; Better imenu
+(add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
+```
+## 2 js2-refactor and xref-js2
+Install
+```
+M-x package-install RET js2-refactor RET
+M-x package-install RET xref-js2 RET
+```
+
+```elisp
+(require 'js2-refactor)
+(require 'xref-js2)
+
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c C-r")
+(define-key js2-mode-map (kbd "C-k") #'js2r-kill)
+
+;; js-mode (which js2 is based on) binds "M-." which conflicts with xref, so
+;; unbind it.
+(define-key js-mode-map (kbd "M-.") nil)
+
+(add-hook 'js2-mode-hook (lambda ()
+  (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
+```
+
+Usage
+`M-.` Jump to definition
+`M-?` Jump to references
+`M-,` Pop back to where `M-.` was last invoked
+
+## 3 autocomplete
+`sudo npm install -g tern`
+Emacs configuration
+```elisp
+(require 'company)
+(require 'company-tern)
+
+(add-to-list 'company-backends 'company-tern)
+(add-hook 'js2-mode-hook (lambda ()
+                           (tern-mode)
+                           (company-mode)))
+                           
+;; Disable completion keybindings, as we use xref-js2 instead
+(define-key tern-mode-keymap (kbd "M-.") nil)
+(define-key tern-mode-keymap (kbd "M-,") nil)
+```
+
+
 # Tips
 ### Fetch detached Emacs session
 ```Shell
