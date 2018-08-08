@@ -25,14 +25,14 @@
 
 ;; Add exec path from shell
 ;; by Purcell
-;;(when (memq window-system '(mac ns x))
-;;  (exec-path-from-shell-initialize))
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 ;;==============================
 ;; Elpy settings
 ;;==============================
 (elpy-enable)
-(setq elpy-rpc-python-command "python3")
+(setq elpy-rpc-python-command "python")
 
 
 (custom-set-variables
