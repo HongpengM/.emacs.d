@@ -1,6 +1,12 @@
 (require 'package)
 
 ;;==============================
+;; Show line number
+;;==============================
+(global-linum-mode 1) ; always show line numbers                              
+(setq linum-format "%d| ")  ;set format
+
+;;==============================
 ;; Package Source
 ;;==============================
 ;; Add more package resources
