@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Gitlab/ebondmed-design/" "~/GitHub/PyMotionCorr/" "~/Gitlab/security/" "~/Gitlab/ebondmed-infrastructure/" "~/Gitlab/ebondmedcore/")
+("~/GitHub/PyMotionCorr/" "~/Gitlab/core2/" "~/GitHub/thumbup/" "~/GitHub/KnowledgeManagement/" "~/.emacs.d/" "~/Gitlab/ebondmed-design/" "~/Gitlab/security/" "~/Gitlab/ebondmed-infrastructure/" "~/Gitlab/ebondmedcore/")

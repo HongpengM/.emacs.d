@@ -40,10 +40,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(markdown-command "/usr/local/bin/preview")
+ '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
+    (julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
  '(projectile-mode t nil (projectile))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
@@ -135,7 +135,7 @@
    "Major mode for editing GitHub Flavored Markdown files" t)
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 ;; Add Markdown Preview parser C-c C-c p
-(custom-set-variables '(markdown-command "/usr/local/bin/macdown"))
+
 
 
 ;;==============================
@@ -176,3 +176,9 @@
 (define-key tern-mode-keymap (kbd "M-.") nil)
 (define-key tern-mode-keymap (kbd "M-,") nil)
 
+;;==============================
+;;     Julia Env Settings
+;;==============================
+;; download julia-mode.el from https://github.com/JuliaEditorSupport/julia-emacs/blob/master/julia-mode.el
+(add-to-list 'load-path ".emacs.d/julia/julia-mode.el")
+(require 'julia-mode)
