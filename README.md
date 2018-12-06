@@ -153,7 +153,7 @@ and add to `init.el`
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 ```
 
-# Javascript Env
+# 4Javascript Env
 
 ## 1 js2-mode 
 Install `M-x package-install RET js2-mode RET`
@@ -210,6 +210,9 @@ Emacs configuration
 (define-key tern-mode-keymap (kbd "M-,") nil)
 ```
 
+
+# 4 Common Lisp Env
+## Slime
 
 # Tips
 ### Fetch detached Emacs session

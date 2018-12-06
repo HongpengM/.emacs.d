@@ -182,3 +182,9 @@
 ;; download julia-mode.el from https://github.com/JuliaEditorSupport/julia-emacs/blob/master/julia-mode.el
 (add-to-list 'load-path ".emacs.d/julia/julia-mode.el")
 (require 'julia-mode)
+
+
+;;==============================
+;;     Common Lisp Env Settings
+;;==============================
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
