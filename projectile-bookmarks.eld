@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Gitlab/core2/" "~/Gitlab/ebond-mobile-api/" "~/GitHub/KnowledgeManagement/" "~/Gitlab/nodejs-learning/" "~/GitHub/PyMotionCorr/" "~/GitHub/thumbup/" "~/Gitlab/ebondmed-design/" "~/Gitlab/security/" "~/Gitlab/ebondmed-infrastructure/" "~/Gitlab/ebondmedcore/")
+("~/.emacs.d/" "~/Gitlab/core2/" "~/GitHub/BFinance/" "~/Gitlab/ebond-mobile-api/" "~/GitHub/KnowledgeManagement/" "~/Gitlab/nodejs-learning/" "~/GitHub/PyMotionCorr/" "~/GitHub/thumbup/" "~/Gitlab/ebondmed-design/" "~/Gitlab/security/" "~/Gitlab/ebondmed-infrastructure/" "~/Gitlab/ebondmedcore/")

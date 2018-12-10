@@ -230,6 +230,10 @@ Emacs configuration
 
 ```
 
+# 6 Scheme
+## Scheme setup 
+Download MIT Scheme Distributions and copy `xscheme.el` to `.emacs.d`
+
 # Tips
 ### Fetch detached Emacs session
 ```Shell
@@ -239,3 +243,13 @@ fg %emacs
 Run command: `C-c M-o` or `M-x comint-clear-buffer`
 Previous command in old Shell: `M-p` or `C-<UP>`
 Next command in old Shell: `M-n` or `C-<Down>`
+
+# Problems shooting
+
+## Package install
+when package not found, try `package-refresh-content`
+automatically refresh package content
+``` elisp
+(when (not package-archive-contents)
+    (package-refresh-contents))
+```

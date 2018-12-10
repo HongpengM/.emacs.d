@@ -1,6 +1,12 @@
 (require 'package)
 
 ;;==============================
+;; Show line number
+;;==============================
+(global-linum-mode 1) ; always show line numbers                              
+(setq linum-format "%d| ")  ;set format
+
+;;==============================
 ;; Package Source
 ;;==============================
 ;; Add more package resources
@@ -9,7 +15,9 @@
     ("marmalade" . "https://marmalade-repo.org/packages/")
     ("melpa" . "http://melpa.milkbox.net/packages/")))
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+  ;; choose either the stable or the latest git version:
+  ;; '("melpa-stable" . "http://stable.melpa.org/packages/")
+  '("melpa-unstable" . "http://melpa.org/packages/"))
 (package-initialize)
 ;;Set url proxy method
 ;;(setq url-proxy-services
@@ -19,19 +27,25 @@
 
 ;; Add exec path from shell
 ;; by Purcell
-;;(when (memq window-system '(mac ns x))
-;;  (exec-path-from-shell-initialize))
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
+;;==============================
+;; Elpy settings
+;;==============================
 (elpy-enable)
+(setq elpy-rpc-python-command "python")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(markdown-command "/usr/local/bin/preview")
+ '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
+    (geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
  '(projectile-mode t nil (projectile))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
@@ -163,4 +177,54 @@
 ;; Disable completion keybindings, as we use xref-js2 instead
 (define-key tern-mode-keymap (kbd "M-.") nil)
 (define-key tern-mode-keymap (kbd "M-,") nil)
+
+;;==============================
+;;     Julia Env Settings
+;;==============================
+;; download julia-mode.el from https://github.com/JuliaEditorSupport/julia-emacs/blob/master/julia-mode.el
+;;(add-to-list 'load-path ".emacs.d/julia/julia-mode.el")
+;;(require 'julia-mode)
+
+
+;;==============================
+;;     Common Lisp Env Settings
+;;==============================
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+
+;;==============================
+(add-hook 'yaml-mode-hook
+          (lambda ()
+            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+
+
+;;==============================
+;;     General Emacs Settings
+;;==============================
+
+;; 1. Window split redo & undo
+;; Package-Install winner-mode
+;; Automatically start with winner-mode
+;; Winner mode Shortcuts:
+;; C-c <- : undo
+;; C-c -> : redo
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
+
+;; 2. Window split move with directions
+;; Window move key bindings
+(global-set-key (kbd "C-c w <left>")  'windmove-left)
+(global-set-key (kbd "C-c w <right>") 'windmove-right)
+(global-set-key (kbd "C-c w <up>")    'windmove-up)
+(global-set-key (kbd "C-c w <down>")  'windmove-down)
+
+;; 3. Automatically refresh package content
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+;;==============================
+;;     Scheme Settings
+;;==============================
+(add-to-list 'load-path "Users/k/.emacs.d/scheme/xscheme.el")
+
 

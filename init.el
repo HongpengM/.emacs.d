@@ -15,7 +15,9 @@
     ("marmalade" . "https://marmalade-repo.org/packages/")
     ("melpa" . "http://melpa.milkbox.net/packages/")))
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+  ;; choose either the stable or the latest git version:
+  ;; '("melpa-stable" . "http://stable.melpa.org/packages/")
+  '("melpa-unstable" . "http://melpa.org/packages/"))
 (package-initialize)
 ;;Set url proxy method
 ;;(setq url-proxy-services
@@ -43,7 +45,7 @@
  '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
+    (epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
  '(projectile-mode t nil (projectile))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
@@ -215,3 +217,14 @@
 (global-set-key (kbd "C-c w <right>") 'windmove-right)
 (global-set-key (kbd "C-c w <up>")    'windmove-up)
 (global-set-key (kbd "C-c w <down>")  'windmove-down)
+
+;; 3. Automatically refresh package content
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+;;==============================
+;;     Scheme Settings
+;;==============================
+(add-to-list 'load-path "Users/k/.emacs.d/scheme/xscheme.el")
+
+
