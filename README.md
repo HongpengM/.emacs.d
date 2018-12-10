@@ -214,9 +214,8 @@ Emacs configuration
 # 4 Common Lisp Env
 ## Slime
 
-
-# 5 YAML mode
-## YAML-mode
+# 5 Emacs Basics
+## 1 YAML-mode
 
 
 ``` elisp
@@ -225,6 +224,11 @@ Emacs configuration
             (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 ```
 
+## 2 Winner mode
+
+``` elisp
+
+```
 
 # Tips
 ### Fetch detached Emacs session

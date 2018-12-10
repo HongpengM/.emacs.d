@@ -180,8 +180,8 @@
 ;;     Julia Env Settings
 ;;==============================
 ;; download julia-mode.el from https://github.com/JuliaEditorSupport/julia-emacs/blob/master/julia-mode.el
-(add-to-list 'load-path ".emacs.d/julia/julia-mode.el")
-(require 'julia-mode)
+;;(add-to-list 'load-path ".emacs.d/julia/julia-mode.el")
+;;(require 'julia-mode)
 
 
 ;;==============================
@@ -189,10 +189,29 @@
 ;;==============================
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 
-
-;;==============================
-;;     YAML 
 ;;==============================
 (add-hook 'yaml-mode-hook
           (lambda ()
             (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+
+
+;;==============================
+;;     General Emacs Settings
+;;==============================
+
+;; 1. Window split redo & undo
+;; Package-Install winner-mode
+;; Automatically start with winner-mode
+;; Winner mode Shortcuts:
+;; C-c <- : undo
+;; C-c -> : redo
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
+
+;; 2. Window split move with directions
+;; Window move key bindings
+(global-set-key (kbd "C-c w <left>")  'windmove-left)
+(global-set-key (kbd "C-c w <right>") 'windmove-right)
+(global-set-key (kbd "C-c w <up>")    'windmove-up)
+(global-set-key (kbd "C-c w <down>")  'windmove-down)
