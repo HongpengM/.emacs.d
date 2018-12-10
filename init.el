@@ -188,3 +188,11 @@
 ;;     Common Lisp Env Settings
 ;;==============================
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
+
+
+;;==============================
+;;     YAML 
+;;==============================
+(add-hook 'yaml-mode-hook
+          (lambda ()
+            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))

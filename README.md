@@ -214,6 +214,18 @@ Emacs configuration
 # 4 Common Lisp Env
 ## Slime
 
+
+# 5 YAML mode
+## YAML-mode
+
+
+``` elisp
+(add-hook 'yaml-mode-hook
+          (lambda ()
+            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+```
+
+
 # Tips
 ### Fetch detached Emacs session
 ```Shell
@@ -223,5 +235,3 @@ fg %emacs
 Run command: `C-c M-o` or `M-x comint-clear-buffer`
 Previous command in old Shell: `M-p` or `C-<UP>`
 Next command in old Shell: `M-n` or `C-<Down>`
-
-
