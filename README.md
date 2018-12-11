@@ -253,3 +253,6 @@ automatically refresh package content
 (when (not package-archive-contents)
     (package-refresh-contents))
 ```
+
+## emacs package manager
+https://github.com/xuchunyang/epm

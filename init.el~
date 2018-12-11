@@ -45,7 +45,7 @@
  '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
+    (ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
  '(projectile-mode t nil (projectile))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
@@ -226,5 +226,38 @@
 ;;     Scheme Settings
 ;;==============================
 (add-to-list 'load-path "Users/k/.emacs.d/scheme/xscheme.el")
+
+Install geiser, company-mode, paredit
+
+
+;;==============================
+;;     Scala Settings
+;;==============================
+
+
+;; 1. Ensime
+;;
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
+(add-to-list 'exec-path "/usr/local/bin")
+
+;; 2. Scala-mode
+;; https://github.com/ensime/emacs-scala-mode
+;;
+(use-package scala-mode
+  :interpreter
+  ("scala" . scala-mode))
+
+;; 3. Sbt-mode
+(use-package sbt-mode
+  :commands sbt-start sbt-command
+  :config
+  ;; WORKAROUND: https://github.com/ensime/emacs-sbt-mode/issues/31
+  ;; allows using SPACE when in the minibuffer
+  (substitute-key-definition
+   'minibuffer-complete-word
+   'self-insert-command
+   minibuffer-local-completion-map))
 
 
