@@ -1,2 +1,7 @@
+# elisp compile files
 *.elc
 */*.elc
+# temp files
+*~
+*/*~
+auto-save-list/
