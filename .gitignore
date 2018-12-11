@@ -1,7 +1,13 @@
 # elisp compile files
 *.elc
 */*.elc
+
 # temp files
 *~
 */*~
+
+# Auto-save 
 auto-save-list/
+
+# ELPA archives folders
+elpa/archives/*

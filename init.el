@@ -1,14 +1,17 @@
+;;==============================
+;;     General Emacs Settings
+;;==============================
+
+
 (require 'package)
 
-;;==============================
+;;-------------------------------
 ;; Show line number
-;;==============================
 (global-linum-mode 1) ; always show line numbers                              
 (setq linum-format "%d| ")  ;set format
 
-;;==============================
+;;-------------------------------
 ;; Package Source
-;;==============================
 ;; Add more package resources
 (setq package-archives
   '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -29,6 +32,59 @@
 ;; by Purcell
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
+
+;;------------------------------
+;; 1. Window split redo & undo
+;; Package-Install winner-mode
+;; Automatically start with winner-mode
+;; Winner mode Shortcuts:
+;; C-c <- : undo
+;; C-c -> : redo
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
+
+;; 2. Window split move with directions
+;; Window move key bindings
+(global-set-key (kbd "C-c w <left>")  'windmove-left)
+(global-set-key (kbd "C-c w <right>") 'windmove-right)
+(global-set-key (kbd "C-c w <up>")    'windmove-up)
+(global-set-key (kbd "C-c w <down>")  'windmove-down)
+;; Frame move binds with wind move
+;; Add framemove to load path
+(add-to-list 'load-path "~/.emacs.d/package_manual")
+
+;; 3. Automatically refresh package content
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+;;------------------------------
+;; Material Theme
+(load-theme 'material t)
+;;(load-theme 'material-light t)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;;------------------------------
+;; Projectile settings
+(require 'projectile)
+;;C-c p p  ;; switch projects
+(global-set-key (kbd "C-c p p") 'projectile-switch-project)
+;;C-c p f  ;; list project files
+(global-set-key (kbd "C-c p f") 'projectile--find-file)
+;;C-c p g  ;; grep project
+(global-set-key (kbd "C-c p g") 'projectile-grep)
+;; Set projects search path
+(setq projectile-project-search-path '("~/Gitlab/" "~/Github/"))
+
+;; ------------------------------
+;; Magit settings for Git
+;; Magit status shotcut
+(global-set-key (kbd "C-x g") 'magit-status)
+
 
 ;;==============================
 ;; Elpy settings
@@ -81,22 +137,6 @@
 (setq web-mode-enable-auto-expanding t)
 (setq web-mode-enable-css-colorization t)
 
-(require 'projectile)
-;;C-c p p  ;; switch projects
-(global-set-key (kbd "C-c p p") 'projectile-switch-project)
-;;C-c p f  ;; list project files
-(global-set-key (kbd "C-c p f") 'projectile--find-file)
-;;C-c p g  ;; grep project
-(global-set-key (kbd "C-c p g") 'projectile-grep)
-;; Set projects search path
-(setq projectile-project-search-path '("~/Gitlab/" "~/Github/"))
-
-;; ==============================
-;; Magit settings for Git
-;;==============================
-
-;; Magit status shotcut
-(global-set-key (kbd "C-x g") 'magit-status)
 
 
 ;;==============================
@@ -110,17 +150,6 @@
 (setq jedi:complete-on-dot t)
 
 
-;;==============================
-;; Material Theme
-;;==============================
-(load-theme 'material t)
-;;(load-theme 'material-light t)
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;;==============================
 ;; Markdown and preview settings
@@ -198,29 +227,7 @@
 
 
 
-;;==============================
-;;     General Emacs Settings
-;;==============================
 
-;; 1. Window split redo & undo
-;; Package-Install winner-mode
-;; Automatically start with winner-mode
-;; Winner mode Shortcuts:
-;; C-c <- : undo
-;; C-c -> : redo
-(when (fboundp 'winner-mode)
-  (winner-mode 1))
-
-;; 2. Window split move with directions
-;; Window move key bindings
-(global-set-key (kbd "C-c w <left>")  'windmove-left)
-(global-set-key (kbd "C-c w <right>") 'windmove-right)
-(global-set-key (kbd "C-c w <up>")    'windmove-up)
-(global-set-key (kbd "C-c w <down>")  'windmove-down)
-
-;; 3. Automatically refresh package content
-(when (not package-archive-contents)
-    (package-refresh-contents))
 
 ;;==============================
 ;;     Scheme Settings
