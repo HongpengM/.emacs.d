@@ -7,26 +7,26 @@
 
 ;;-------------------------------
 ;; Show line number
-(global-linum-mode 1) ; always show line numbers                              
-(setq linum-format "%d| ")  ;set format
+(global-linum-mode 1)			; always show line numbers
+(setq linum-format "%d| ")		;set format
 
 ;;-------------------------------
 ;; Insert today's date
-(defun insert-current-date () (interactive)
+(defun insert-current-date () 
+  (interactive) 
   (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
 
 
 ;;-------------------------------
 ;; Package Source
 ;; Add more package resources
-(setq package-archives
-  '(("gnu" . "http://elpa.gnu.org/packages/")
-    ("marmalade" . "https://marmalade-repo.org/packages/")
-    ("melpa" . "http://melpa.milkbox.net/packages/")))
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/") 
+			 ("marmalade" . "https://marmalade-repo.org/packages/") 
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 (add-to-list 'package-archives
-  ;; choose either the stable or the latest git version:
-  ;; '("melpa-stable" . "http://stable.melpa.org/packages/")
-  '("melpa-unstable" . "http://melpa.org/packages/"))
+	     ;; choose either the stable or the latest git version:
+	     ;; '("melpa-stable" . "http://stable.melpa.org/packages/")
+	     '("melpa-unstable" . "http://melpa.org/packages/"))
 (package-initialize)
 ;;Set url proxy method
 ;;(setq url-proxy-services
@@ -36,7 +36,7 @@
 
 ;; Add exec path from shell
 ;; by Purcell
-(when (memq window-system '(mac ns x))
+(when (memq window-system '(mac ns x)) 
   (exec-path-from-shell-initialize))
 
 ;;------------------------------
@@ -46,7 +46,7 @@
 ;; Winner mode Shortcuts:
 ;; C-c <- : undo
 ;; C-c -> : redo
-(when (fboundp 'winner-mode)
+(when (fboundp 'winner-mode) 
   (winner-mode 1))
 
 ;; 2. Window split move with directions
@@ -60,8 +60,8 @@
 (add-to-list 'load-path "~/.emacs.d/package_manual")
 
 ;; 3. Automatically refresh package content
-(when (not package-archive-contents)
-    (package-refresh-contents))
+(when (not package-archive-contents) 
+  (package-refresh-contents))
 
 ;;------------------------------
 ;; Material Theme
@@ -104,11 +104,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(markdown-command "/usr/local/bin/macdown")
- '(package-selected-packages
-   (quote
-    (ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
- '(projectile-mode t nil (projectile))
+ '(markdown-command "/usr/local/bin/macdown") 
+ '(package-selected-packages (quote (ensime paredit epm geiser julia-mode company-tern xref-js2
+					    js2-refactor js2-mode markdown-mode magit projectile
+					    web-mode elpy))) 
+ '(projectile-mode t nil (projectile)) 
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
 
@@ -129,7 +129,7 @@
 (setq web-mode-enable-auto-expanding t)
 (setq web-mode-enable-css-colorization t)
 ;; Projectile install
-;; Web-mode options                                                                                 
+;; Web-mode options
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
@@ -163,13 +163,11 @@
 
 ;; Add Markdown mode
 (add-to-list 'load-path "~/.emacs.d/markdown")
-(autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
+(autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-(autoload 'gfm-mode "markdown-mode"
-   "Major mode for editing GitHub Flavored Markdown files" t)
+(autoload 'gfm-mode "markdown-mode" "Major mode for editing GitHub Flavored Markdown files" t)
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 ;; Add Markdown Preview parser C-c C-c p
 
@@ -197,7 +195,7 @@
 ;; unbind it.
 (define-key js-mode-map (kbd "M-.") nil)
 
-(add-hook 'js2-mode-hook (lambda ()
+(add-hook 'js2-mode-hook (lambda () 
 			   (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
 
 ;; Autocomplete
@@ -205,10 +203,10 @@
 (require 'company-tern)
 
 (add-to-list 'company-backends 'company-tern)
-(add-hook 'js2-mode-hook (lambda ()
-                           (tern-mode)
-                           (company-mode)))
-                           
+(add-hook 'js2-mode-hook (lambda () 
+			   (tern-mode) 
+			   (company-mode)))
+
 ;; Disable completion keybindings, as we use xref-js2 instead
 (define-key tern-mode-keymap (kbd "M-.") nil)
 (define-key tern-mode-keymap (kbd "M-,") nil)
@@ -227,9 +225,8 @@
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 
 ;;==============================
-(add-hook 'yaml-mode-hook
-          (lambda ()
-            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+(add-hook 'yaml-mode-hook (lambda () 
+			    (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
 
 
@@ -255,20 +252,20 @@
 ;; 2. Scala-mode
 ;; https://github.com/ensime/emacs-scala-mode
 ;;
-(use-package scala-mode
-  :interpreter
-  ("scala" . scala-mode))
+(use-package 
+    scala-mode 
+  :interpreter ("scala" . scala-mode))
 
 ;; 3. Sbt-mode
-(use-package sbt-mode
-  :commands sbt-start sbt-command
+(use-package 
+    sbt-mode 
+  :commands sbt-start 
+  sbt-command 
   :config
   ;; WORKAROUND: https://github.com/ensime/emacs-sbt-mode/issues/31
   ;; allows using SPACE when in the minibuffer
-  (substitute-key-definition
-   'minibuffer-complete-word
-   'self-insert-command
-   minibuffer-local-completion-map))
+  (substitute-key-definition 'minibuffer-complete-word 'self-insert-command
+			     minibuffer-local-completion-map))
 
 
 ;;==============================
@@ -276,45 +273,45 @@
 ;;==============================
 
 ;; On air grammar check
-(use-package flycheck
-  :ensure t
+(use-package 
+    flycheck 
+  :ensure t 
   :init (global-flycheck-mode))
 
 ;; Irony
 ;; Ref:  http://martinsosic.com/development/emacs/2017/12/09/emacs-cpp-ide.html
-(req-package irony
-  :config
-  (progn
-    ;; If irony server was never installed, install it.
-    (unless (irony--find-server-executable) (call-interactively #'irony-install-server))
+(require 'req-package)
+(req-package 
+  irony 
+  :config (progn
+	    ;; If irony server was never installed, install it.
+	    (unless (irony--find-server-executable) 
+	      (call-interactively #'irony-install-server))
+	    (add-hook 'c++-mode-hook 'irony-mode) 
+	    (add-hook 'c-mode-hook 'irony-mode)
 
-    (add-hook 'c++-mode-hook 'irony-mode)
-    (add-hook 'c-mode-hook 'irony-mode)
+	    ;; Use compilation database first, clang_complete as fallback.
+	    (setq-default irony-cdb-compilation-databases '(irony-cdb-libclang
+							    irony-cdb-clang-complete))
+	    (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)))
 
-    ;; Use compilation database first, clang_complete as fallback.
-    (setq-default irony-cdb-compilation-databases '(irony-cdb-libclang
-                                                      irony-cdb-clang-complete))
+;; I use irony with company to get code completion.
+(req-package 
+  company-irony 
+  :require company 
+  irony 
+  :config (progn (eval-after-load 'company '(add-to-list 'company-backends 'company-irony))))
 
-    (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-  ))
+;; I use irony with flycheck to get real-time syntax checking.
+(req-package 
+  flycheck-irony 
+  :require flycheck 
+  irony 
+  :config (progn (eval-after-load 'flycheck '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))))
 
-  ;; I use irony with company to get code completion.
-  (req-package company-irony
-    :require company irony
-    :config
-    (progn
-      (eval-after-load 'company '(add-to-list 'company-backends 'company-irony))))
-
-  ;; I use irony with flycheck to get real-time syntax checking.
-  (req-package flycheck-irony
-    :require flycheck irony
-    :config
-    (progn
-      (eval-after-load 'flycheck '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))))
-
-  ;; Eldoc shows argument list of the function you are currently writing in the echo area.
-  (req-package irony-eldoc
-    :require eldoc irony
-    :config
-    (progn
-      (add-hook 'irony-mode-hook #'irony-eldoc)))
+;; Eldoc shows argument list of the function you are currently writing in the echo area.
+(req-package 
+  irony-eldoc 
+  :require eldoc 
+  irony 
+  :config (progn (add-hook 'irony-mode-hook #'irony-eldoc)))
