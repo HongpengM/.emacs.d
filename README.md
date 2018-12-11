@@ -244,6 +244,24 @@ Run command: `C-c M-o` or `M-x comint-clear-buffer`
 Previous command in old Shell: `M-p` or `C-<UP>`
 Next command in old Shell: `M-n` or `C-<Down>`
 
+# 7 C++ & C
+### Flycheck
+M-x p-ins flycheck
+
+``` elisp
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+```
+
+### Irony
+
+
+### ==TODO==
+
+# 8 SCala
+
+
 # Problems shooting
 
 ## Package install
