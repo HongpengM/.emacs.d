@@ -210,6 +210,27 @@ Emacs configuration
 (define-key tern-mode-keymap (kbd "M-,") nil)
 ```
 
+## 4 JS REPL in emacs
+js-comint
+Install: p-ins js-comint
+
+``` elisp
+;; js-comint  js REPL in emacs
+(require 'js-comint)
+;; default using node.js
+(setq js-comint-program-command "node")
+(setq js-comint-program-arguments '("--interactive"))
+;; Clean output when using node.js
+(defun inferior-js-mode-hook-setup () 
+  (add-hook 'comint-output-filter-functions 'js-comint-process-output))
+(add-hook 'inferior-js-mode-hook 'inferior-js-mode-hook-setup t)
+;; Shortcut settings
+(add-hook 'js2-mode-hook (lambda () 
+			   (local-set-key (kbd "C-x C-e") 'js-send-last-sexp) 
+			   (local-set-key (kbd "C-c b") 'js-send-buffer) 
+			   (local-set-key (kbd "C-c C-b") 'js-send-buffer-and-go)))
+```
+
 
 # 4 Common Lisp Env
 ## Slime

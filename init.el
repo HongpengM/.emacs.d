@@ -16,6 +16,10 @@
   (interactive) 
   (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
 
+;; Interactive-do-mode on
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
 
 ;;-------------------------------
 ;; Package Source
@@ -105,9 +109,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(markdown-command "/usr/local/bin/macdown") 
- '(package-selected-packages (quote (ensime paredit epm geiser julia-mode company-tern xref-js2
-					    js2-refactor js2-mode markdown-mode magit projectile
-					    web-mode elpy))) 
+ '(package-selected-packages (quote (nvm js-comint dockerfile-mode ensime paredit epm geiser
+					 julia-mode company-tern xref-js2 js2-refactor js2-mode
+					 markdown-mode magit projectile web-mode elpy))) 
  '(projectile-mode t nil (projectile)) 
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
@@ -211,6 +215,24 @@
 (define-key tern-mode-keymap (kbd "M-.") nil)
 (define-key tern-mode-keymap (kbd "M-,") nil)
 
+;; JS run env
+;; js-comint  js REPL in emacs
+(require 'js-comint)
+;; default using node.js
+(setq js-comint-program-command "node")
+(setq js-comint-program-arguments '("--interactive"))
+;; Clean output when using node.js
+(defun inferior-js-mode-hook-setup () 
+  (add-hook 'comint-output-filter-functions 'js-comint-process-output))
+(add-hook 'inferior-js-mode-hook 'inferior-js-mode-hook-setup t)
+;; Shortcut settings
+(add-hook 'js2-mode-hook (lambda () 
+			   (local-set-key (kbd "C-x C-e") 'js-send-last-sexp) 
+			   (local-set-key (kbd "C-c b") 'js-send-buffer) 
+			   (local-set-key (kbd "C-c C-b") 'js-send-buffer-and-go)))
+
+
+
 ;;==============================
 ;;     Julia Env Settings
 ;;==============================
@@ -253,12 +275,12 @@
 ;; https://github.com/ensime/emacs-scala-mode
 ;;
 (use-package 
-    scala-mode 
+  scala-mode 
   :interpreter ("scala" . scala-mode))
 
 ;; 3. Sbt-mode
 (use-package 
-    sbt-mode 
+  sbt-mode 
   :commands sbt-start 
   sbt-command 
   :config
@@ -274,7 +296,7 @@
 
 ;; On air grammar check
 (use-package 
-    flycheck 
+  flycheck 
   :ensure t 
   :init (global-flycheck-mode))
 
@@ -286,13 +308,13 @@
   :config (progn
 	    ;; If irony server was never installed, install it.
 	    (unless (irony--find-server-executable) 
-	      (call-interactively #'irony-install-server))
+	      (call-interactively #'irony-install-server)) 
 	    (add-hook 'c++-mode-hook 'irony-mode) 
 	    (add-hook 'c-mode-hook 'irony-mode)
 
 	    ;; Use compilation database first, clang_complete as fallback.
 	    (setq-default irony-cdb-compilation-databases '(irony-cdb-libclang
-							    irony-cdb-clang-complete))
+							    irony-cdb-clang-complete)) 
 	    (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)))
 
 ;; I use irony with company to get code completion.
@@ -315,3 +337,15 @@
   :require eldoc 
   irony 
   :config (progn (add-hook 'irony-mode-hook #'irony-eldoc)))
+
+;;==============================
+;;     Docker Settings
+;;==============================
+
+;; dockerfile-mode
+;; p-ins dockerfile-mode
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+(put 'dockerfile-image-name 'safe-local-variable #'stringp)
+
+;; init-file ends here.
