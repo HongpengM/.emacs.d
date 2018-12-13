@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "ert-expectations" "20121009.734" "The simplest unit test framework in the world" 'nil :commit "aed70e002c4305b66aed7f6d0d48e9addd2dc1e6" :keywords '("test" "unittest" "ert" "expectations") :authors '(("rubikitch" . "rubikitch@ruby-lang.org")) :maintainer '("rubikitch" . "rubikitch@ruby-lang.org") :url "http://www.emacswiki.org/emacs/download/ert-expectations.el")
