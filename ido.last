@@ -15,8 +15,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/k/.emacs.d/"
  "/Users/k/.emacs.d/init.d/"
+ "/Users/k/.emacs.d/"
  "/Users/k/"
  "/Users/k/Apps/rtags/"
  "/Users/k/Desktop/"
@@ -29,33 +29,33 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init-real.el"
- "init-orgwiki.el"
- "custom.el"
- "init.el"
- "init-cc.el"
- "test.md"
- "test.c"
- "init-yasnippet.el"
  "init-apperance.el"
+ "custom.el"
  ".CFUserTextEncoding"
+ "init-ido.el"
+ "init-helm.el"
+ "init-json.el"
+ "init-dired.el"
+ "init-org.el"
+ "init-search.el"
+ "init-yasnippet.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/k/org-wiki/" (23570 46631 978312 923000) "Programming Language.org~" "C++ IDE.org~" "C++ IDE/" "Politics.org" "Politics.org~" "Huawei CFO.html" "Politics.html~" "Tools.org~" "Emacs Env Settings.org" "Public Politics.org~" "org-wiki.html" "JavaScript/" "Emacs Env Settings.html" "Emacs Env Settings/" "Knowledge Management Tools.org~" "Emacs.org~" "index.html~" "index/" "Huawei CFO.org~" "Package Management/" "Tools.html" "Programming Language.html~" "org-wiki.org~" "Public Politics.html" "Emacs.org" "Science & Technology/" "Computer Science/" "Emacs.html" "Knowledge Management Tools.html" "theme/" "Programming Language.html" "Email for Emacs.html~" "C++ IDE.html" "Computer Science.html~" "Politics.html" "Politics/" "Knowledge Management Tools/" "Emacs/" "Computer Science.html" "Emacs.html~" "C++ IDE.org" "Computer Science.org" "Email for Emacs.org~" "Package Management.org" "Package Management.html" "Programming Language.org" "Public Politics.org" "JavaScript.html~" "Science & Technology.org" "org-wiki.html~" "JavaScript.html" "JavaScript.org" "Tools.html~" "org-wiki.org" "Tools.org" "index.org~" "Science & Technology.html" "Science & Technology.html~" "Package Management.org~" "Huawei CFO.org" "JavaScript.org~" "org-wiki/" "Knowledge Management Tools.org" ".DS_Store" "index.html" "Knowledge Management Tools.html~" "Science & Technology.org~" "Huawei CFO/" "Tools/" "Public Politics/" "#Programming Language.org#" "Computer Science.org~" "Email for Emacs/" "index.org" "Public Politics.html~" "Email for Emacs.org" "Huawei CFO.html~" "Email for Emacs.html" "Programming Language/" "../" "./")
+ ("/Users/k/.emacs.d/init.d/" (23570 43960 724157 569000) "init-yasnippet.el" "init-python.el" "init-search.el" "init-markdown.el" "init-org.el" "init-web.el" "init-cc.el" "init-dired.el" "init-orgwiki.el" "init-json.el" "init-helm.el" "init-apperance.el" "init-yaml.el" "init-scheme.el" "init-batch.el" "init-darwin.el" "init-company.el" "init-bash.el" "init-javescript.el" "init-elisp.el" "init-docker.el" "init-flycheck.el" "init-scala.el" "init-ido.el" "init-projectile.el~" "init-clisp.el" "init-julia.el" "../" "./")
 
- ("/Users/k/" (23570 46815 996275 545000) ".conda/" ".viminfo" ".bash_history" ".putty/" "emacs_settings/" ".python_history-02743.tmp" "Apps/" ".gitconfig" ".python_history" "Downloads/" "anaconda3/" ".oh-my-zsh/" "zsh-syntax-highlighting/" ".bash_profile" "java0.log" ".m2/" ".vscode/" ".ganttproject" ".swt/" "Documents/" ".nutstore/" ".npm/" ".zcompdump" ".jupyter/" "Codes/" ".Trash/" ".python_history-04811.tmp" "Applications/" "Movies/" ".ssh/" "FileTransfer/" ".anaconda/" ".python_history-36081.tmp" "package-lock.json" "GitHub/" "Public/" ".mplayer/" ".sbt/" "Google Drive/" "ganttproject.log" ".bash_sessions/" ".cups/" ".zcompdump-HongpengMa’s MacBook Pro-5.3" ".pgadmin/" ".android/" ".node_repl_history" ".emacs.d/" "Orgs/" ".oracle_jre_usage/" ".lesshst" ".matplotlib/" "Nustore Files/" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".chezscheme_history" ".python_history-11557.tmp" ".nvm/" "node_modules/" "Pictures/" "Shells/" "Creative Cloud Files/" ".local/" ".freeplane/" ".bash_profile~" ".zshrc" ".zshrc.pre-oh-my-zsh" ".wget-hsts" ".CFUserTextEncoding" "org-wiki/" "test.jpeg" "get-pip.py" "Nutstore Files/" "Gitlab/" ".zshrc~" ".DS_Store" ".ivy2/" ".docker/" ".condarc" ".julia/" "Music/" ".config/" "其他内容/" ".org-timestamps/" "../" "./")
-
- ("/Users/k/.emacs.d/" (23570 46745 332615 500000) ".git/" "init-real.el~" "elpa/" "material-light-theme.el" "exec-path-from-shell.el" "julia/" "el-get/" "network-security.data" ".cask/" ".gitignore" "package_manual/" "README.md" "init.el" ".python-environments/" "auto-save-list/" ".gitmodules" "README.html" "init_.el~" "custom.el" "init-real.el" "projectile.cache" "package.el" "projectile-bookmarks.eld" "markdown/" "ido.last~" "init.d/" "material-theme.el" "custom.el~" "tutorial/" "init.el~" "README.html~" "ido.last" "snippets/" "scheme/" "ac-comphist.dat" "../" "./")
-
- ("/Users/k/.emacs.d/init.d/" (23570 45763 792997 384000) "init-yasnippet.el" "init-python.el" "init-search.el" "init-markdown.el" "init-org.el" "init-web.el" "init-cc.el" "init-dired.el" "init-orgwiki.el" "init-json.el" "init-helm.el" "init-apperance.el" "init-yaml.el" "init-scheme.el" "init-batch.el" "init-darwin.el" "init-company.el" "init-bash.el" "init-javescript.el" "init-elisp.el" "init-docker.el" "init-flycheck.el" "init-scala.el" "init-ido.el" "init-projectile.el~" "init-clisp.el" "init-julia.el" "../" "./")
+ ("/Users/k/.emacs.d/" (23570 43965 467502 877000) ".git/" "init-real.el~" "elpa/" "material-light-theme.el" "exec-path-from-shell.el" "julia/" "el-get/" "network-security.data" ".cask/" ".gitignore" "package_manual/" "README.md" "init.el" ".python-environments/" "auto-save-list/" ".gitmodules" "README.html" "init_.el~" "custom.el" "init-real.el" "projectile.cache" "package.el" "projectile-bookmarks.eld" "markdown/" "ido.last~" "init.d/" "material-theme.el" "custom.el~" "tutorial/" "init.el~" "README.html~" "ido.last" "snippets/" "scheme/" "ac-comphist.dat" "../" "./")
 
  ("/Users/k/Apps/rtags/" (23570 31664 244146 724000) "src/" "share/" ".travis.yml" "LICENSE.txt" ".git/" "build/" "README.org" ".github/" "scripts/" ".gitignore" "clang.sup" ".gitmodules" "tests/" "web/" "CHANGELOG" "configure" "bin/" "cmake/" "CMakeLists.txt" ".dir-locals.el" "man/" "../" "./")
 
  ("/Users/k/Apps/" (23570 30695 676806 265000) "browsermob-proxy-2.1.6/" "browsermob-proxy/" "rtags-master.zip" "browsermob-proxy-2.1.6-SNAPSHOT-bin.zip" "rtags/" ".DS_Store" "../" "./")
 
+ ("/Users/k/" (23570 43235 923154 299000) ".conda/" ".viminfo" ".bash_history" ".putty/" "emacs_settings/" ".python_history-02743.tmp" "Apps/" ".gitconfig" ".python_history" "Downloads/" "anaconda3/" ".oh-my-zsh/" "zsh-syntax-highlighting/" ".bash_profile" "java0.log" ".m2/" ".vscode/" ".ganttproject" ".swt/" "Documents/" ".nutstore/" ".npm/" ".zcompdump" ".jupyter/" "Codes/" ".Trash/" ".python_history-04811.tmp" "Applications/" "Movies/" ".ssh/" "FileTransfer/" ".anaconda/" ".python_history-36081.tmp" "package-lock.json" "GitHub/" "Public/" ".mplayer/" ".sbt/" "Google Drive/" "ganttproject.log" ".bash_sessions/" ".cups/" ".zcompdump-HongpengMa’s MacBook Pro-5.3" ".pgadmin/" ".android/" ".node_repl_history" ".emacs.d/" "Orgs/" ".oracle_jre_usage/" ".lesshst" ".matplotlib/" "Nustore Files/" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".chezscheme_history" ".python_history-11557.tmp" ".nvm/" "node_modules/" "Pictures/" "Shells/" "Creative Cloud Files/" ".local/" ".freeplane/" ".bash_profile~" ".zshrc" ".zshrc.pre-oh-my-zsh" ".wget-hsts" ".CFUserTextEncoding" "org-wiki/" "test.jpeg" "get-pip.py" "Nutstore Files/" "Gitlab/" ".zshrc~" ".DS_Store" ".ivy2/" ".docker/" ".condarc" ".julia/" "Music/" ".config/" "其他内容/" ".org-timestamps/" "../" "./")
+
  ("/Users/k/Desktop/" (23570 40527 811982 261000) "~$合作框架协议.docx" "附件3：2019届综合论文训练课题统计表.xlsx" "附件3：2019届综合论文训练课题统计表.xls" "GRE GMAT LSAT全部2772阅读真题.docx" "Book2.xlsx" "词汇570.pdf" "spiderTPO writing/" "collection.apkg" "UnionFS - Wikipedia.html" "MotionCorrBrowser/" "Corporation Outline w:t cases.docx" "test.py" "GRE GMAT LSAT全部2772阅读真题.pdf" "ps wt12.12.docx" "spiderTPO/" "TE-2018-12-01.html" "Corporation Outline w:t cases.pdf" "WechatIMG69.jpeg" "我的笔记本 - Microsoft OneNote Online.pdf" "口语模板.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/k/org-wiki/" (23570 37653 804912 220000) "Programming Language.org~" "C++ IDE.org~" "C++ IDE/" "Politics.org" "Politics.org~" "Huawei CFO.html" "Politics.html~" "Tools.org~" "Public Politics.org~" "org-wiki.html" "JavaScript/" "Knowledge Management Tools.org~" "Emacs.org~" "index.html~" "index/" "Huawei CFO.org~" "Package Management/" "Tools.html" "Programming Language.html~" "org-wiki.org~" "Public Politics.html" "Emacs.org" "Science & Technology/" "Computer Science/" "Emacs.html" "Knowledge Management Tools.html" "theme/" "Programming Language.html" "Email for Emacs.html~" "Computer Science.html~" "Politics.html" "Politics/" "Knowledge Management Tools/" "Emacs/" "Computer Science.html" "Emacs.html~" "C++ IDE.org" "Computer Science.org" "Email for Emacs.org~" "Package Management.org" "Programming Language.org" "Public Politics.org" "JavaScript.html~" "Science & Technology.org" "org-wiki.html~" "JavaScript.html" "JavaScript.org" "Tools.html~" "org-wiki.org" "Tools.org" "index.org~" "Science & Technology.html" "Science & Technology.html~" "Package Management.org~" "Huawei CFO.org" "JavaScript.org~" "org-wiki/" "Knowledge Management Tools.org" ".DS_Store" "index.html" "Knowledge Management Tools.html~" "Science & Technology.org~" "Huawei CFO/" "Tools/" "Public Politics/" "#Programming Language.org#" "Computer Science.org~" "Email for Emacs/" "index.org" "Public Politics.html~" "Email for Emacs.org" "Huawei CFO.html~" "Email for Emacs.html" "Programming Language/" "../" "./")
 
  ("/Users/k/Orgs/" (23570 21621 697115 751000) "today.org~" "12-12-2018.org" ".git/" "2018-12-13.org" "temp_" "#ProblemsLog.org#" "today.org" "ProblemsLog.org" "../" "./")
 

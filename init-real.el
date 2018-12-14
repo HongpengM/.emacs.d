@@ -10,8 +10,7 @@
 
 ;; elpa
 
-(setq package-archives '(
-			 ("gnu" . "https://elpa.gnu.org/packages/")
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")
                          ("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("org" . "https://orgmode.org/elpa/")
@@ -128,7 +127,7 @@
  
  '(package-selected-packages
    (quote
-    (htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode org-wiki markdown-mode magit projectile web-mode elpy)))
+    (htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
  )
 
 ;; Autocomplete
