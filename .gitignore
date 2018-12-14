@@ -11,3 +11,15 @@ auto-save-list/
 
 # ELPA archives folders
 elpa/archives/*
+
+# Cask temp
+.cask/
+
+# python env
+.python-environments/
+
+tutorial/
+
+markdown/
+
+package_manual/
