@@ -49,6 +49,10 @@
 ;; Material Theme
 ;(load-theme 'material t)
 ;;(load-theme 'material-light t)
+
+;; Boost with geiser in order to avoid org-wiki-export-html problems
+(setq geiser-active-implementations '(mit))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,7 +70,7 @@
  '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (## htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode markdown-mode magit projectile web-mode elpy)))
+    (youdao-dictionary nov htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode org-wiki markdown-mode magit projectile web-mode elpy)))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
 

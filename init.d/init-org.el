@@ -2,6 +2,7 @@
 
 (req-package org
   :ensure t
+  :force t
   :mode ("\\.org$" . org-mode)
   :bind (("C-c l" . org-store-link)
          ("C-c c" . org-capture)
@@ -14,23 +15,40 @@
                  (setq org-refile-use-outline-path 'file)
                  (setq org-startup-folded 'showeverything)
                  (setq org-log-done 'note)
+		 (setq org-agenda-files '("~/Orgs/today.org"
+					  "~/org-wiki"))
                  (define-key org-mode-map (kbd "C-M-\\") 'org-indent-region)))
 
-(req-package org-pomodoro
-  :ensure t
-  :commands org-pomodoro
-  :config
-  (add-hook
-   'org-pomodoro-finished-hook
-   (lambda ()
-     (shell-command "play ~/.emacs.d/pomodoro-stop.mp3")
-     (browse-url "'https://duckduckgo.com/?q=cats&iax=images&ia=images'")))
-  (add-hook
-   'org-pomodoro-break-finished-hook
-   (lambda ()
-     (shell-command "play ~/.emacs.d/pomodoro-start.mp3")
-     (async-shell-command "emacsclient --no-wait ~/Work")))
-  :bind (("C-c p" . org-pomodoro)))
+
+
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   ;; ...
+   (python . t)
+   (scheme . t)
+   ))
+
+;; (load "~/.emacs.d/init.d/ob-scheme.el")
+
+
+;;(req-package org-pomodoro
+;;  :ensure t
+;;  :commands org-pomodoro
+;;  :config
+;;  (add-hook
+;;   'org-pomodoro-finished-hook
+;;   (lambda ()
+;;     (shell-command "play ~/.emacs.d/pomodoro-stop.mp3")
+;;     (browse-url "'https://duckduckgo.com/?q=cats&iax=images&ia=images'")))
+;;  (add-hook
+;;   'org-pomodoro-break-finished-hook
+;;   (lambda ()
+;;     (shell-command "play ~/.emacs.d/pomodoro-start.mp3")
+;;     (async-shell-command "emacsclient --no-wait ~/Work")))
+;;  :bind (("C-c p" . org-pomodoro)))
+;;
 
 ;; org-mode javascript extensions
 (req-package ob-js)

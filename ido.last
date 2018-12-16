@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/k/Documents/Books/" . "TechBooks/")
+ ("/Users/k/Documents/" . "Books/")
  ("/Users/k/Apps/" . "rtags/")
  ("/Users/k/.emacs.d/" . "init.d/")
  ("/Users/k/Gitlab/ebond-mobile-api/" . ".vscode/")
@@ -15,12 +17,15 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/k/.emacs.d/"
  "/Users/k/.emacs.d/init.d/"
+ "/Users/k/Documents/Books/TechBooks/"
+ "/Users/k/.emacs.d/scheme/"
+ "/Users/k/Orgs/"
+ "/Users/k/Documents/Books/"
+ "/Users/k/.emacs.d/"
  "/Users/k/"
  "/Users/k/Apps/rtags/"
  "/Users/k/Desktop/"
- "/Users/k/Orgs/"
  "/Users/k/Gitlab/ebond-mobile-api/.vscode/"
  "/Users/k/Codes/JavaScripts/JSLearn/"
  "/Users/k/org-wiki/"
@@ -29,35 +34,43 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init-real.el"
- "init-orgwiki.el"
- "custom.el"
- "init.el"
- "init-cc.el"
- "test.md"
- "test.c"
- "init-yasnippet.el"
+ "init-scheme.el"
+ "init-org.el"
+ "sicp.epub"
+ "xscheme.el"
+ "test.scm"
+ "ob-scheme.el"
+ "today.org"
  "init-apperance.el"
- ".CFUserTextEncoding"
+ "init-dict.el"
+ "On_China.epub"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/k/org-wiki/" (23570 46631 978312 923000) "Programming Language.org~" "C++ IDE.org~" "C++ IDE/" "Politics.org" "Politics.org~" "Huawei CFO.html" "Politics.html~" "Tools.org~" "Emacs Env Settings.org" "Public Politics.org~" "org-wiki.html" "JavaScript/" "Emacs Env Settings.html" "Emacs Env Settings/" "Knowledge Management Tools.org~" "Emacs.org~" "index.html~" "index/" "Huawei CFO.org~" "Package Management/" "Tools.html" "Programming Language.html~" "org-wiki.org~" "Public Politics.html" "Emacs.org" "Science & Technology/" "Computer Science/" "Emacs.html" "Knowledge Management Tools.html" "theme/" "Programming Language.html" "Email for Emacs.html~" "C++ IDE.html" "Computer Science.html~" "Politics.html" "Politics/" "Knowledge Management Tools/" "Emacs/" "Computer Science.html" "Emacs.html~" "C++ IDE.org" "Computer Science.org" "Email for Emacs.org~" "Package Management.org" "Package Management.html" "Programming Language.org" "Public Politics.org" "JavaScript.html~" "Science & Technology.org" "org-wiki.html~" "JavaScript.html" "JavaScript.org" "Tools.html~" "org-wiki.org" "Tools.org" "index.org~" "Science & Technology.html" "Science & Technology.html~" "Package Management.org~" "Huawei CFO.org" "JavaScript.org~" "org-wiki/" "Knowledge Management Tools.org" ".DS_Store" "index.html" "Knowledge Management Tools.html~" "Science & Technology.org~" "Huawei CFO/" "Tools/" "Public Politics/" "#Programming Language.org#" "Computer Science.org~" "Email for Emacs/" "index.org" "Public Politics.html~" "Email for Emacs.org" "Huawei CFO.html~" "Email for Emacs.html" "Programming Language/" "../" "./")
+ ("/Users/k/.emacs.d/init.d/" (23574 25926 14228 458000) "init-yasnippet.el" "init-python.el" "init-search.el" "init-markdown.el" "init-dict.el" "init-org.el" "init-web.el" "init-cc.el" "init-dired.el" "init-orgwiki.el" "init-json.el" "init-helm.el" "init-apperance.el" "ob-scheme.el" "init-yaml.el" "init-javascript.el" "init-nov.el" "init-scheme.el" "init-batch.el" "init-darwin.el" "init-company.el" "init-bash.el" "init-elisp.el" "init-docker.el" "init-flycheck.el" "init-scala.el" "init-ido.el" "init-projectile.el~" "init-clisp.el" "init-julia.el" "../" "./")
 
- ("/Users/k/" (23570 46815 996275 545000) ".conda/" ".viminfo" ".bash_history" ".putty/" "emacs_settings/" ".python_history-02743.tmp" "Apps/" ".gitconfig" ".python_history" "Downloads/" "anaconda3/" ".oh-my-zsh/" "zsh-syntax-highlighting/" ".bash_profile" "java0.log" ".m2/" ".vscode/" ".ganttproject" ".swt/" "Documents/" ".nutstore/" ".npm/" ".zcompdump" ".jupyter/" "Codes/" ".Trash/" ".python_history-04811.tmp" "Applications/" "Movies/" ".ssh/" "FileTransfer/" ".anaconda/" ".python_history-36081.tmp" "package-lock.json" "GitHub/" "Public/" ".mplayer/" ".sbt/" "Google Drive/" "ganttproject.log" ".bash_sessions/" ".cups/" ".zcompdump-HongpengMa’s MacBook Pro-5.3" ".pgadmin/" ".android/" ".node_repl_history" ".emacs.d/" "Orgs/" ".oracle_jre_usage/" ".lesshst" ".matplotlib/" "Nustore Files/" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".chezscheme_history" ".python_history-11557.tmp" ".nvm/" "node_modules/" "Pictures/" "Shells/" "Creative Cloud Files/" ".local/" ".freeplane/" ".bash_profile~" ".zshrc" ".zshrc.pre-oh-my-zsh" ".wget-hsts" ".CFUserTextEncoding" "org-wiki/" "test.jpeg" "get-pip.py" "Nutstore Files/" "Gitlab/" ".zshrc~" ".DS_Store" ".ivy2/" ".docker/" ".condarc" ".julia/" "Music/" ".config/" "其他内容/" ".org-timestamps/" "../" "./")
+ ("/Users/k/.emacs.d/" (23574 26271 855704 1000) ".git/" "init-real.el~" "elpa/" "material-light-theme.el" "exec-path-from-shell.el" "el-get/" "network-security.data" ".cask/" ".gitignore" "package_manual/" "README.md" "init.el" ".python-environments/" "url/" "auto-save-list/" ".gitmodules" "nov-places" "README.html" "init_.el~" "custom.el" "init-real.el" "projectile.cache" "package.el" "projectile-bookmarks.eld" "justify-kp.el" "markdown/" "ido.last~" "init.d/" "material-theme.el" "custom.el~" "tutorial/" "init.el~" "README.html~" "ido.last" "snippets/" "scheme/" "ac-comphist.dat" "../" "./")
 
- ("/Users/k/.emacs.d/" (23570 46745 332615 500000) ".git/" "init-real.el~" "elpa/" "material-light-theme.el" "exec-path-from-shell.el" "julia/" "el-get/" "network-security.data" ".cask/" ".gitignore" "package_manual/" "README.md" "init.el" ".python-environments/" "auto-save-list/" ".gitmodules" "README.html" "init_.el~" "custom.el" "init-real.el" "projectile.cache" "package.el" "projectile-bookmarks.eld" "markdown/" "ido.last~" "init.d/" "material-theme.el" "custom.el~" "tutorial/" "init.el~" "README.html~" "ido.last" "snippets/" "scheme/" "ac-comphist.dat" "../" "./")
+ ("/Users/k/org-wiki/" (23574 29978 151121 970000) "Programming Language.org~" "C++ IDE.org~" "C++ IDE/" "Knowledge Bank/" "Politics.org" "Schools & Tests.html" "Politics.org~" ".#index.org" "Huawei CFO.html" "Politics.html~" "Tools.org~" "On China Henry Kissinger/" "Emacs Env Settings.org" "Public Politics.org~" "org-wiki.html" "JavaScript/" "test2/" "TOEFL test/" "Emacs Env Settings.html" "Emacs Env Settings/" "Knowledge Management Tools.org~" "Emacs.org~" "On China Henry Kissinger.org" "index.html~" "index/" "Huawei CFO.org~" "Package Management/" "Tools.html" "Programming Language.html~" "org-wiki.org~" "Public Politics.html" "Emacs.org" "Problems Lists.org" "Science & Technology/" "Computer Science/" "Knowledge Bank.org" "Emacs.html" "Knowledge Management Tools.html" "The Structure and Intepretation of Computer Programs (SICP).org" "English Test.org" "theme/" "Programming Language.html" "Schools & Tests/" "Email for Emacs.html~" "C++ IDE.html" "Computer Science.html~" "English Test.html" "Knowledge Bank.html" "Problems Lists/" "Politics.html" "Politics/" "Knowledge Management Tools/" "Computer & Tech Related.org" "LISP.org" "Emacs/" "Computer Science.html" "Emacs.html~" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.org" "C++ IDE.org" "Schools & Tests.org" "International Politics/" "Computer Science.org" "Email for Emacs.org~" "Package Management.org" "The Structure and Intepretation of Computer Programs (SICP).html" "Package Management.html" "Programming Language.org" "Public Politics.org" "JavaScript.html~" "Science & Technology.org" "org-wiki.html~" "JavaScript.html" "JavaScript.org" "Tools.html~" "org-wiki.org" "Tools.org" "test2.org" "index.org~" "Science & Technology.html" "Science & Technology.html~" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960/" "Package Management.org~" "imgs/" "TOEFL test.html" "Computer & Tech Related/" "On China Henry Kissinger.html" "Huawei CFO.org" "JavaScript.org~" "org-wiki/" "test2.html" "TOEFL test.org" "English Test/" "Knowledge Management Tools.org" "International Politics.org" ".DS_Store" "index.html" "Knowledge Management Tools.html~" "Science & Technology.org~" "LISP/" "Huawei CFO/" "Tools/" "Public Politics/" "#Programming Language.org#" "Computer Science.org~" "Email for Emacs/" "index.org" "International Politics.html" "Public Politics.html~" "Email for Emacs.org" "Huawei CFO.html~" "Email for Emacs.html" "Programming Language/" "The Structure and Intepretation of Computer Programs (SICP)/" "../" "./")
 
- ("/Users/k/.emacs.d/init.d/" (23570 45763 792997 384000) "init-yasnippet.el" "init-python.el" "init-search.el" "init-markdown.el" "init-org.el" "init-web.el" "init-cc.el" "init-dired.el" "init-orgwiki.el" "init-json.el" "init-helm.el" "init-apperance.el" "init-yaml.el" "init-scheme.el" "init-batch.el" "init-darwin.el" "init-company.el" "init-bash.el" "init-javescript.el" "init-elisp.el" "init-docker.el" "init-flycheck.el" "init-scala.el" "init-ido.el" "init-projectile.el~" "init-clisp.el" "init-julia.el" "../" "./")
+ ("/Users/k/" (23574 25092 931955 269000) ".conda/" ".viminfo" ".bash_history" ".putty/" "emacs_settings/" ".python_history-02743.tmp" "Apps/" ".gitconfig" ".cache/" ".python_history" "Downloads/" "anaconda3/" ".oh-my-zsh/" "zsh-syntax-highlighting/" ".bash_profile" "java0.log" ".m2/" ".vscode/" ".ganttproject" ".swt/" "Documents/" ".nutstore/" ".npm/" ".zcompdump" "test.c" ".jupyter/" "Codes/" ".Trash/" ".python_history-04811.tmp" "Applications/" "Movies/" ".ssh/" "FileTransfer/" ".anaconda/" ".geiser_history.guile" ".python_history-36081.tmp" "package-lock.json" "GitHub/" "Public/" ".mplayer/" ".sbt/" "Google Drive/" "ganttproject.log" ".bash_sessions/" ".cups/" ".zcompdump-HongpengMa’s MacBook Pro-5.3" ".pgadmin/" ".android/" ".node_repl_history" ".emacs.d/" "Orgs/" ".oracle_jre_usage/" ".lesshst" ".matplotlib/" "Nustore Files/" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".chezscheme_history" ".python_history-11557.tmp" ".nvm/" "node_modules/" "test.cpp" "Pictures/" "Shells/" "Creative Cloud Files/" ".local/" ".freeplane/" "Clip.jar" ".bash_profile~" ".zshrc" ".zshrc.pre-oh-my-zsh" "bin/" ".wget-hsts" ".CFUserTextEncoding" "org-wiki/" "test.jpeg" "get-pip.py" "Nutstore Files/" "Gitlab/" ".zshrc~" ".DS_Store" ".ivy2/" ".docker/" ".condarc" ".julia/" "Music/" ".config/" "其他内容/" ".org-timestamps/" "../" "./")
+
+ ("/Users/k/.emacs.d/scheme/" (23567 7082 356741 611000) "test.scm~" "xscheme.el" "test.scm" "../" "./")
+
+ ("/Users/k/Documents/Books/TechBooks/" (23574 10275 0 0) "programming_in_scala_2nd.pdf" "mit-scheme-user.pdf" "history of chez scheme.pdf" "sicp.epub" "ProgrammingScala.pdf" "sicp.pdf" "JavaScript权威指南_第6版.淘宝前端团队.pdf" "Node.js实战.pdf" "../" "./")
+
+ ("/Users/k/Documents/Books/" (23574 10275 0 0) "Principles Ray Dalio.pdf" "人大社图书书目（截止到2018.6月）.xls" "377efe3f24f9e7e493a578566ccb65b2.pdf" "TechBooks/" "股权一本通.pdf" "On_China.epub" "重新定位 特劳特.pdf" "artofwar.pdf" "孙子兵法.pdf" "精力管理.pdf" "SUNZI2.pdf" "On China by Henry Kissinger.pdf.pdf" ".DS_Store" "孙子兵法.txt" "../" "./")
+
+ ("/Users/k/Documents/" (23574 10275 0 0) "GMAT阅读.pdf" "REG.pdf" "JuliaLearning/" "SRunLog/" "_WorkingQueue/" "PBCSF_quant/" "英语/" "MedProj/" "2018物理化学绪论课.pdf" "阿曦/" "Social/" "BloombergJournal/" "Private Thoughts/" "TTKN/" "A/" "Books/" "日程.xlsx" "2019Fall/" "Core/" ".DS_Store" "计划/" "Temp/" "_T/" "SoftwareTools/" "Proj/" "../" "./")
+
+ ("/Users/k/Orgs/" (23574 6905 233906 777000) "NotesLog.org" "today.org~" ".git/" "temp_" "archivetoday.sh" "#ProblemsLog.org#" "today.org" "ProblemsLog.org" "archive/" ".DS_Store" "../" "./")
+
+ ("/Users/k/Desktop/" (23574 651 0 0) "~$合作框架协议.docx" "附件3：2019届综合论文训练课题统计表.xlsx" "附件3：2019届综合论文训练课题统计表.xls" "GRE GMAT LSAT全部2772阅读真题.docx" "Screen Shot 2018-12-16 at 3.25.41 PM.png" "kissinger-2011-on-china.pdf" "Book2.xlsx" "词汇570.pdf" "spiderTPO writing/" "collection.apkg" "UnionFS - Wikipedia.html" "MotionCorrBrowser/" "Corporation Outline w:t cases.docx" "test.py" "GRE GMAT LSAT全部2772阅读真题.pdf" "ps wt12.12.docx" "426765_201808031058561gi1o.png" "spiderTPO/" "TE-2018-12-01.html" "Corporation Outline w:t cases.pdf" "Registration Confirmation.pdf" "WechatIMG69.jpeg" "我的笔记本 - Microsoft OneNote Online.pdf" "口语模板.pdf" ".DS_Store" "../" "./")
 
  ("/Users/k/Apps/rtags/" (23570 31664 244146 724000) "src/" "share/" ".travis.yml" "LICENSE.txt" ".git/" "build/" "README.org" ".github/" "scripts/" ".gitignore" "clang.sup" ".gitmodules" "tests/" "web/" "CHANGELOG" "configure" "bin/" "cmake/" "CMakeLists.txt" ".dir-locals.el" "man/" "../" "./")
 
  ("/Users/k/Apps/" (23570 30695 676806 265000) "browsermob-proxy-2.1.6/" "browsermob-proxy/" "rtags-master.zip" "browsermob-proxy-2.1.6-SNAPSHOT-bin.zip" "rtags/" ".DS_Store" "../" "./")
-
- ("/Users/k/Desktop/" (23570 40527 811982 261000) "~$合作框架协议.docx" "附件3：2019届综合论文训练课题统计表.xlsx" "附件3：2019届综合论文训练课题统计表.xls" "GRE GMAT LSAT全部2772阅读真题.docx" "Book2.xlsx" "词汇570.pdf" "spiderTPO writing/" "collection.apkg" "UnionFS - Wikipedia.html" "MotionCorrBrowser/" "Corporation Outline w:t cases.docx" "test.py" "GRE GMAT LSAT全部2772阅读真题.pdf" "ps wt12.12.docx" "spiderTPO/" "TE-2018-12-01.html" "Corporation Outline w:t cases.pdf" "WechatIMG69.jpeg" "我的笔记本 - Microsoft OneNote Online.pdf" "口语模板.pdf" ".DS_Store" "../" "./")
-
- ("/Users/k/Orgs/" (23570 21621 697115 751000) "today.org~" "12-12-2018.org" ".git/" "2018-12-13.org" "temp_" "#ProblemsLog.org#" "today.org" "ProblemsLog.org" "../" "./")
 
  ("/Users/k/Codes/JavaScripts/JSLearn/" (23570 14646 609580 258000) "map_set.js~" ".git/" "map_reduce.js" "starting.js~" "function_scope.js" "function_scope.js~" "map_reduce.js~" "Cha1/" "string.js~" "objects.js~" "../" "./")
 
