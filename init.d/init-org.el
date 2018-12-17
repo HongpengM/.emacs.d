@@ -16,6 +16,7 @@
                  (setq org-startup-folded 'showeverything)
                  (setq org-log-done 'note)
 		 (setq org-agenda-files '("~/Orgs/today.org"
+					  "~/Orgs/company.org"
 					  "~/org-wiki"))
                  (define-key org-mode-map (kbd "C-M-\\") 'org-indent-region)))
 

@@ -70,7 +70,7 @@
  '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (youdao-dictionary nov htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode org-wiki markdown-mode magit projectile web-mode elpy)))
+    (helm-company company-quickhelp htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode org-wiki markdown-mode magit projectile web-mode elpy)))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
 
