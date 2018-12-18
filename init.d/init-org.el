@@ -1,35 +1,58 @@
 (require 'req-package)
 
-(req-package org
-  :ensure t
-  :force t
-  :mode ("\\.org$" . org-mode)
-  :bind (("C-c l" . org-store-link)
-         ("C-c c" . org-capture)
-         ("C-c a" . org-agenda)
-         ("C-'" . org-cycle-agenda-files)
-         ("C-c b" . org-iswitchb))
-  :config (progn (setq org-default-notes-file (concat org-directory "/notes.org"))
-                 (setq org-tags-column -110)
-                 (setq org-capture-bookmark t)
-                 (setq org-refile-use-outline-path 'file)
-                 (setq org-startup-folded 'showeverything)
-                 (setq org-log-done 'note)
-		 (setq org-agenda-files '("~/Orgs/today.org"
-					  "~/Orgs/company.org"
-					  "~/org-wiki"))
-                 (define-key org-mode-map (kbd "C-M-\\") 'org-indent-region)))
+(req-package 
+  org 
+  :ensure t 
+  :force t 
+  :mode ("\\.org$" . org-mode) 
+  :bind (("C-c l" . org-store-link) 
+	 ("C-c c" . org-capture) 
+	 ("C-c a" . org-agenda) 
+	 ("C-'" . org-cycle-agenda-files) 
+	 ("C-c b" . org-iswitchb)) 
+  :config (progn 
+	    (setq org-default-notes-file (concat org-directory "/notes.org")) 
+	    (setq org-tags-column -110) 
+	    (setq org-capture-bookmark t) 
+	    (setq org-refile-use-outline-path 'file) 
+	    (setq org-startup-folded 'showeverything) 
+	    (setq org-log-done 'note) 
 
+	    ;; TODO change colors to faces using defface
+	    (setq org-todo-keyword-faces '(("TODO" . org-todo)
+					   ("WAIT" .
+					    (:foreground "white"
+							 :background "#f98125"
+							 :weight bold))
+					   ("DELAYED" .
+					    (:foreground "white"
+							 :background "#f44242"
+							 :weight bold))
+					   ("REPORT" . org-todo)
+					   ("BUG" . (:foreground "yellow"
+								 :background "red"
+								 :weight bold
+								 ))
+					   ("KNOWNCAUSE" . (:foreground "white"
+									:background "#cb4df9"
+									:weight bold))
+					  
+					   ("CANCELED" . 
+					    (:foreground "blue"
+							 :background "#95d5f9"
+							 :weight bold)))) 
+	    (setq org-agenda-files '("~/Orgs/today.org" "~/Orgs/company.org" "~/Orgs/learning.org"
+				     "~/org-wiki")) 
+	    (define-key org-mode-map (kbd "C-M-\\") 'org-indent-region)))
 
+(setq org-todo-keywords '((sequence "TODO(t)" "WAIT(w@)" "|" "DONE(d)") 
+			  (sequence "REPORT(r@)" "BUG(b@)" "KNOWNCAUSE(k@)" "|" "FIXED(f)") 
+			  (sequence "DELAYED(e@)" "|" "CANCELED(c)")))
 
-
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '(
-   ;; ...
-   (python . t)
-   (scheme . t)
-   ))
+(org-babel-do-load-languages 'org-babel-load-languages '(
+							 ;; ...
+							 (python . t) 
+							 (scheme . t)))
 
 ;; (load "~/.emacs.d/init.d/ob-scheme.el")
 
@@ -52,6 +75,7 @@
 ;;
 
 ;; org-mode javascript extensions
-(req-package ob-js)
+(req-package 
+  ob-js)
 
 (provide 'init-org)

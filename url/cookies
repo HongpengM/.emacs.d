@@ -2,12 +2,12 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '(("www.baidu.com"
-  [url-cookie "NOJS" "1" "Wed, 09-Dec-2048 04:09:16 GMT" "/" "www.baidu.com" nil])
- (".baidu.com"
-  [url-cookie "BAIDUID" "45B689206366C5CA0AC3B3669FF21545:FG=1" "Sat Jan 04 07:21:56 2087 GMT" "/" ".baidu.com" nil]
+ '((".baidu.com"
+  [url-cookie "PSTM" "1545019668" "Sat Jan 04 07:21:56 2087 GMT" "/" ".baidu.com" nil]
   [url-cookie "BIDUPSID" "45B689206366C5CA0AC3B3669FF21545" "Sat Jan 04 07:21:56 2087 GMT" "/" ".baidu.com" nil]
-  [url-cookie "PSTM" "1545019668" "Sat Jan 04 07:21:56 2087 GMT" "/" ".baidu.com" nil]))
+  [url-cookie "BAIDUID" "45B689206366C5CA0AC3B3669FF21545:FG=1" "Sat Jan 04 07:21:56 2087 GMT" "/" ".baidu.com" nil])
+ ("www.baidu.com"
+  [url-cookie "NOJS" "1" "Wed, 09-Dec-2048 04:09:16 GMT" "/" "www.baidu.com" nil]))
 )
 (setq url-cookie-secure-storage
  'nil)

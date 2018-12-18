@@ -36,6 +36,9 @@
 			   "
 #+INCLUDE: theme/style.org
 #+TITLE: %n
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \setmainfont{Times New Roman}
+#+LATEX_HEADER: \setCJKmainfont[ItalicFont={STKaiti}]{STSong} 
 #+DESCRIPTION:
 #+KEYWORDS:
 #+STARTUP:  content
