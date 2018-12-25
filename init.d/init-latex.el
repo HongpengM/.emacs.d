@@ -152,7 +152,8 @@
   	      ("convert -density %D -trim -antialias %f -quality 100 %O")))
   ))
   )
-  
+
+
   
 ;; The end of auto generated code.
 (provide 'init-latex)

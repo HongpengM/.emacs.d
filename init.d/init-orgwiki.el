@@ -26,11 +26,9 @@
   (setq org-wiki-default-read-only nil)	  ;; Default value
   (setq org-wiki-server-port "8000")	  ;; 8000 - default value
   (setq org-wiki-server-host "127.0.0.1") ;; Listen only localhost
-  (setq org-wiki-clip-jar-path "~/bin/opt/clip.jar")
+;; (setq org-wiki-clip-jar-path "~/bin/opt/clip.jar")
   
-  (add-to-list 'org-babel-load-languages '(js . t))
-  (org-babel-do-load-languages 'org-babel-load-languages org-babel-load-languages)
-  (add-to-list 'org-babel-tangle-lang-exts '("js" . "js"))
+
 
   (setq org-wiki-template (string-trim
 			   "
@@ -52,6 +50,6 @@
 "))
 )
 
-(require 'org-download)
+
 
 (provide 'init-orgwiki)

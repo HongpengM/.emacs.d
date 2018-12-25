@@ -2,13 +2,22 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/k/GitHub/OpenGLTutorial/my-learning/" . "test2/")
+ ("/Users/k/GitHub/OpenGLTutorial/" . "my-learning/")
+ ("/Users/k/GitHub/" . "OpenGLTutorial/")
+ ("/Users/k/Gitlab/ebond-mobile-api/test/app/" . "model/")
+ ("/Users/k/Gitlab/ebond-mobile-api/test/" . "app/")
+ ("/Users/k/Downloads/HiC3DViewer/" . "hicViewer/")
+ ("/Users/k/Downloads/" . "HiC3DViewer/")
+ ("/Users/k/Documents/Final_Project/" . "BackupPlan/")
+ ("/Users/k/GitHub/UnpProgramming/" . "intro/")
  ("/Users/k/Apps/pdf-tools/" . "pdf-tools-0.90/")
  ("/Users/k/Gitlab/ebond-mobile-api/app/" . "service/")
  ("/Users/k/Documents/Books/" . "TechBooks/")
  ("/Users/k/Documents/" . "Books/")
  ("/Users/k/Apps/" . "pdf-tools/")
  ("/Users/k/.emacs.d/" . "init.d/")
- ("/Users/k/Gitlab/ebond-mobile-api/" . "app/")
+ ("/Users/k/Gitlab/ebond-mobile-api/" . "config/")
  ("/Users/k/Gitlab/" . "ebond-mobile-api/")
  ("/Users/k/Codes/" . "JavaScripts/")
  ("/Users/k/Codes/JavaScripts/" . "JSLearn/")
@@ -20,20 +29,33 @@
 ;; ----- ido-work-directory-list -----
 (
  "/Users/k/.emacs.d/init.d/"
- "/Users/k/Orgs/"
- "/Users/k/"
- "/Users/k/Gitlab/ebond-mobile-api/"
- "/Users/k/org-wiki/"
- "/Users/k/Documents/Final_Project/"
- "/Users/k/Documents/Books/TechBooks/"
  "/Users/k/.emacs.d/"
- "/Users/k/Gitlab/ebond-mobile-api/app/service/"
- "/Users/k/Gitlab/ebond-mobile-api/app/controller/"
- "/Users/k/Gitlab/ebond-mobile-api/app/model/"
+ "/Users/k/Documents/Books/"
+ "/Users/k/Gitlab/ebond-mobile-api/"
+ "/Users/k/Orgs/"
  "/Users/k/Gitlab/ebond-mobile-api/config/"
+ "/Users/k/Gitlab/wiki/"
+ "/Users/k/org-wiki/"
+ "/Users/k/"
+ "/Users/k/Documents/Final_Project/BackupPlan/"
+ "/Users/k/Documents/Final_Project/"
+ "/Users/k/GitHub/OpenGLTutorial/my-learning/test2/"
+ "/Users/k/GitHub/OpenGLTutorial/my-learning/test1/"
+ "/Users/k/GitHub/OpenGLTutorial/my-learning/"
+ "/Users/k/GitHub/OpenGLTutorial/my-learning/build/"
+ "/Users/k/Gitlab/ebond-mobile-api/test/app/controller/"
+ "/Users/k/Gitlab/ebond-mobile-api/test/app/model/"
+ "/Users/k/Gitlab/ebond-mobile-api/test/app/"
+ "/Users/k/Downloads/HiC3DViewer/hicViewer/"
+ "/Users/k/Gitlab/ebond-mobile-api/app/service/"
+ "/Users/k/Gitlab/ebond-mobile-api/app/model/"
+ "/Users/k/Gitlab/ebond-mobile-api/docs/"
+ "/Users/k/Gitlab/ebond-mobile-api/app/controller/"
+ "/Users/k/Gitlab/ebond-mobile-api/app/middleware/"
+ "/Users/k/Documents/Books/TechBooks/"
+ "/Users/k/GitHub/UnpProgramming/intro/"
  "/Users/k/Gitlab/"
  "/Users/k/.emacs.d/scheme/"
- "/Users/k/Documents/Books/"
  "/Users/k/Apps/rtags/"
  "/Users/k/Desktop/"
  "/Users/k/Gitlab/ebond-mobile-api/.vscode/"
@@ -43,41 +65,101 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init-org.el"
- "today.org"
+ "init-yasnippet.el"
+ "custom.el"
+ "init-web.el"
+ "init-real.el"
  "init-orgwiki.el"
- "test.sh"
- "clearenv.sh"
+ "init-org.el"
+ "init-cmake.el"
+ "On_China.epub"
  "setenv.sh"
- "init-latex.el"
- "xelatex_compile.sh"
- "MotionCor2-UserManual-09-13-2018.pdf"
- "init-pdf.el"
+ ".gitlab-ci.yml"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/k/.emacs.d/init.d/" (23576 57877 998599 589000) "init-yasnippet.el" "init-python.el" "init-search.el" "init-markdown.el" "init-dict.el" "init-org.el" "init-web.el" "init-cc.el" "init-dired.el" "init-orgwiki.el" "init-json.el" "init-projectile.el" "init-helm.el" "init-apperance.el" "ob-scheme.el" "init-yaml.el" "init-javascript.el" "init-nov.el" "init-scheme.el" "init-pdf.el" "init-batch.el" "init-darwin.el" "init-company.el" "init-bash.el" "init-elisp.el" "init-docker.el" "init-flycheck.el" "init-scala.el" "init-ido.el" "init-clisp.el" "init-latex.el" "init-julia.el" "../" "./")
+ ("/Users/k/.emacs.d/init.d/" (23586 16495 970704 481000) "init-yasnippet.el" "init-python.el" "init-search.el" "init-markdown.el" "init-dict.el" "init-org.el" "init-web.el" "init-cc.el" "init-dired.el" "init-orgwiki.el" "init-json.el" "init-projectile.el" "init-helm.el" "init-apperance.el" "ob-scheme.el" "init-yaml.el" "init-javascript.el" "init-sh.el" "init-nov.el" "init-scheme.el" "init-pdf.el" "init-batch.el" "init-darwin.el" "init-company.el" "init-bash.el" "init-elisp.el" "init-docker.el" "init-flycheck.el" "init-scala.el" "init-ido.el" "init-clisp.el" "init-latex.el" "init-julia.el" "../" "./")
 
- ("/Users/k/.emacs.d/" (23576 57891 896246 291000) ".git/" "init-real.el~" "elpa/" "material-light-theme.el" "exec-path-from-shell.el" "el-get/" "network-security.data" ".cask/" ".gitignore" "package_manual/" "README.md" "init.el" ".python-environments/" "url/" "auto-save-list/" ".gitmodules" "nov-places" "README.html" "init_.el~" "custom.el" "init-real.el" "projectile.cache" "package.el" "projectile-bookmarks.eld" "justify-kp.el" "markdown/" "ido.last~" "init.d/" "material-theme.el" "custom.el~" "tutorial/" "init.el~" "README.html~" "ido.last" "snippets/" "scheme/" "ac-comphist.dat" "../" "./")
+ ("/Users/k/.emacs.d/" (23586 16587 387939 506000) ".git/" "init-real.el~" "elpa/" "material-light-theme.el" "exec-path-from-shell.el" "el-get/" "network-security.data" ".cask/" ".gitignore" "package_manual/" "README.md" "init.el" ".python-environments/" "url/" "auto-save-list/" ".gitmodules" "nov-places" "README.html" "init_.el~" "custom.el" "init-real.el" "projectile.cache" "package.el" "projectile-bookmarks.eld" "justify-kp.el" "markdown/" "ido.last~" "init.d/" "material-theme.el" "custom.el~" "tutorial/" "init.el~" "README.html~" "ido.last" "snippets/" "scheme/" "ac-comphist.dat" "../" "./")
 
- ("/Users/k/org-wiki/" (23576 57717 884909 436000) "Programming Language.org~" "What is Strategy by Michael E. Porter.synctex.gz" "What is Strategy by Michael E. Porter.html" "C++ IDE.org~" "CMake.html" "C++ IDE/" "What is Strategy by Michael E. Porter.aux" "Careers.org" "Knowledge Bank/" "What is Strategy by Michael E. Porter.log" "Politics.org" "Schools & Tests.html" "Politics.org~" "On China Henry Kissinger.pdf" "CS & Tech/" "Emacs Latex Extensions/" "Huawei CFO.html" "Politics.html~" "LISP.html" "Tools.org~" "MongoDB.html" "On China Henry Kissinger/" "On China Henry Kissinger.bbl" "Emacs Env Settings.org" "Public Politics.org~" "MongoDB.org" "org-wiki.html" "JavaScript/" "test2/" "TOEFL test/" "Emacs Env Settings.html" "Emacs Env Settings/" "Knowledge Management Tools.org~" "Emacs.org~" "On China Henry Kissinger.org" "NodeJS.org" "index.html~" "index/" "Huawei CFO.org~" "On China Henry Kissinger.out" "Package Management/" "Problems Lists.html" "Tools.html" "Programming Language.html~" "org-wiki.org~" "Public Politics.html" "Emacs.org" "Problems Lists.org" "Science & Technology/" "Computer Science/" "Knowledge Bank.org" "Emacs.html" "Knowledge Management Tools.html" "The Structure and Intepretation of Computer Programs (SICP).org" "English Test.org" "CMake.org" "On China Henry Kissinger.tex" "theme/" "Programming Language.html" "Schools & Tests/" "Email for Emacs.html~" "On China Henry Kissinger.toc" "Redis.org" "C++ IDE.html" "Computer Science.html~" "English Test.html" "Knowledge Bank.html" "Problems Lists/" "xelatex_compile.sh" "Graduate Projects/" "Politics.html" "Politics/" "Careers/" "Graduate Projects.html" "Knowledge Management Tools/" "Computer & Tech Related.org" "LISP.org" "Emacs/" "MongoDB/" "Careers.html" "Computer Science.html" "Projects.html" "Emacs.html~" "Graduate Projects.bbl" "CS & Tech.org" "Books.org" "Database.org" "Books/" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.org" "C++ IDE.org" "Schools & Tests.org" "International Politics/" "Docker.html" "Computer Science.org" "What is Strategy by Michael E. Porter.out" "Email for Emacs.org~" "Package Management.org" "Emacs PDF extensions/" "The Structure and Intepretation of Computer Programs (SICP).html" "Graduate Projects.org" "Package Management.html" "What is Strategy by Michael E. Porter/" "Programming Language.org" "Emacs PDF extensions.html" "Public Politics.org" "Emacs PDF extensions.org" "Books.html" "JavaScript.html~" "Database.html" "Shell.html" "Science & Technology.org" "Emacs LISP (elisp)/" "org-wiki.html~" "Computer & Tech Related.html" "Emacs Latex Extensions.org" "JavaScript.html" "Projects/" "JavaScript.org" "What is Strategy by Michael E. Porter.toc" "Tools.html~" "org-wiki.org" "What is Strategy by Michael E. Porter.tex" "Tools.org" "Graduate Projects.pdf" "Shell/" "Org/" "test2.org" "index.org~" "Science & Technology.html" "Science & Technology.html~" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960/" "Redis/" "Package Management.org~" "On China Henry Kissinger.log" "Graduate Projects.tex" "Redis.html" "imgs/" "TOEFL test.html" "On China Henry Kissinger.aux" "Computer & Tech Related/" "On China Henry Kissinger.html" "On China Henry Kissinger.blg" "Huawei CFO.org" "Org.org" "NodeJS.html" "CMake/" "JavaScript.org~" "What is Strategy by Michael E. Porter.pdf" "org-wiki/" "test2.html" "TOEFL test.org" "English Test/" "Knowledge Management Tools.org" "Emacs Latex Extensions.html" "missfont.log" "International Politics.org" ".DS_Store" "index.html" "CS & Tech.html" "Org.html" "Knowledge Management Tools.html~" "Science & Technology.org~" "Docker/" "LISP/" "Huawei CFO/" "Tools/" "Docker.org" "Public Politics/" "#Programming Language.org#" "Computer Science.org~" "Emacs LISP (elisp).org" "Email for Emacs/" "NodeJS/" "Projects.org" "index.org" "International Politics.html" "Public Politics.html~" "What is Strategy by Michael E. Porter.org" "Email for Emacs.org" "Huawei CFO.html~" "Database/" "Email for Emacs.html" "Emacs LISP (elisp).html" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.html" "What is Strategy by Michael E. Porter.bbl" "Programming Language/" "The Structure and Intepretation of Computer Programs (SICP)/" "Shell.org" "../" "./")
+ ("/Users/k/" (23586 16432 809128 944000) ".cmake/" ".conda/" ".viminfo" ".bash_history" ".mongorc.js" ".putty/" "commit_my_wiki.sh" "emacs_settings/" ".python_history-02743.tmp" "Apps/" ".gitconfig" "test.sh" ".cache/" ".python_history" "Downloads/" "anaconda3/" ".rediscli_history" ".oh-my-zsh/" "zsh-syntax-highlighting/" ".bash_profile" "java0.log" ".m2/" ".vscode/" ".ganttproject" ".swt/" "Documents/" ".nutstore/" ".npm/" ".zcompdump" "test.c" ".jupyter/" "Codes/" ".Trash/" ".dbshell" ".python_history-04811.tmp" "Applications/" "Movies/" ".ssh/" "FileTransfer/" ".anaconda/" ".geiser_history.guile" ".python_history-36081.tmp" "package-lock.json" "GitHub/" "logs/" "Public/" ".mplayer/" "org.ics" ".sbt/" "Google Drive/" "ganttproject.log" ".bash_sessions/" ".cups/" "org-wiki.zip" ".zcompdump-HongpengMa’s MacBook Pro-5.3" ".pgadmin/" ".android/" ".node_repl_history" ".emacs.d/" "Orgs/" ".oracle_jre_usage/" "texput.log" ".lesshst" ".matplotlib/" "Nustore Files/" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".chezscheme_history" ".python_history-11557.tmp" ".nvm/" "node_modules/" "test.cpp" "Pictures/" "Shells/" "Creative Cloud Files/" ".local/" ".freeplane/" "Clip.jar" ".bash_profile~" ".zshrc" ".zshrc.pre-oh-my-zsh" "bin/" ".wget-hsts" ".CFUserTextEncoding" "org-wiki/" "test.jpeg" "get-pip.py" "Nutstore Files/" "Gitlab/" ".zshrc~" ".DS_Store" ".ivy2/" ".docker/" ".condarc" ".julia/" "Music/" ".config/" "其他内容/" ".org-timestamps/" "../" "./")
 
- ("/Users/k/Orgs/" (23576 57272 253204 267000) "today.org~" "company.tex" "test.tex" ".git/" "company.html" "test.org" "company.org" "temp_" "today.ics" "test.pdf" "archivetoday.sh" "company.log" "#ProblemsLog.org#" "today.org" "ProblemsLog.org" "archive/" "learning.org" ".DS_Store" "../" "./")
+ ("/Users/k/Documents/" (23586 14662 0 0) "GMAT阅读.pdf" "REG.pdf" "JuliaLearning/" "SRunLog/" "_WorkingQueue/" "PBCSF_quant/" "英语/" "MedProj/" "2018物理化学绪论课.pdf" "阿曦/" "Social/" "BloombergJournal/" "Private Thoughts/" "TTKN/" "A/" "Books/" "Final_Project/" "日程.xlsx" "2019Fall/" "Core/" ".DS_Store" "计划/" "Temp/" "_T/" "SoftwareTools/" "Proj/" "../" "./")
 
- ("/Users/k/" (23576 52232 555336 777000) ".conda/" ".viminfo" ".bash_history" ".putty/" "emacs_settings/" ".python_history-02743.tmp" "Apps/" ".gitconfig" "test.sh" ".cache/" ".python_history" "Downloads/" "anaconda3/" ".oh-my-zsh/" "zsh-syntax-highlighting/" ".bash_profile" "java0.log" ".m2/" ".vscode/" ".ganttproject" ".swt/" "Documents/" ".nutstore/" ".npm/" ".zcompdump" "test.c" ".jupyter/" "Codes/" ".Trash/" ".python_history-04811.tmp" "Applications/" "Movies/" ".ssh/" "FileTransfer/" ".anaconda/" ".geiser_history.guile" ".python_history-36081.tmp" "package-lock.json" "GitHub/" "logs/" "Public/" ".mplayer/" "org.ics" ".sbt/" "Google Drive/" "ganttproject.log" ".bash_sessions/" ".cups/" ".zcompdump-HongpengMa’s MacBook Pro-5.3" ".pgadmin/" ".android/" ".node_repl_history" ".emacs.d/" "Orgs/" ".oracle_jre_usage/" "texput.log" ".lesshst" ".matplotlib/" "Nustore Files/" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".chezscheme_history" ".python_history-11557.tmp" ".nvm/" "node_modules/" "test.cpp" "Pictures/" "Shells/" "Creative Cloud Files/" ".local/" ".freeplane/" "Clip.jar" ".bash_profile~" ".zshrc" ".zshrc.pre-oh-my-zsh" "bin/" ".wget-hsts" ".CFUserTextEncoding" "org-wiki/" "test.jpeg" "get-pip.py" "Nutstore Files/" "Gitlab/" ".zshrc~" ".DS_Store" ".ivy2/" ".docker/" ".condarc" ".julia/" "Music/" ".config/" "其他内容/" ".org-timestamps/" "../" "./")
+ ("/Users/k/org-wiki/" (23586 14537 741424 782000) "Gitlab-runner/" "OpenGL/" "Terminal & Zsh.org" "C++.org" "What is Strategy by Michael E. Porter.html" "DevOps.org" "mocha.org" "Git/" "CMake.html" "C++ IDE/" "Careers.org" "Knowledge Bank/" "What is Strategy by Michael E. Porter.log" "Operating Systems.html" "Politics.org" "Schools & Tests.html" "egg.js.org" "Linux Kernel.org" "Graphics Programming.org" "CS & Tech/" "Web Server/" "C++ API design.log" "GPU Programming.html" "Prospective & Outline.html" "Emacs Latex Extensions/" "Gitlab-runner.org" "Huawei CFO.html" "LISP.html" "MongoDB.html" "On China Henry Kissinger/" "Terminal & Zsh.html" ".git/" "Emacs Env Settings.org" "Gitlab-runner.html" "MongoDB.org" "Node/" "org-wiki.html" "gcc & g++/" "China 1840 to now.org" "JavaScript/" "test2/" "TOEFL test/" "Emacs Env Settings.html" "DevOps.html" "Emacs Env Settings/" "Bit torrent download server.org" "C++.html" "On China Henry Kissinger.org" "NodeJS.org" "UNIX network programming.html" "Bit torrent download server/" "index/" "Prospective & Outline.org" "Package Management/" "Problems Lists.html" "Tools.html" "History.org" "mocha.html" "Node.org" "Public Politics.html" "Emacs.org" "History/" "Problems Lists.org" "Science & Technology/" "Computer Science/" "Knowledge Bank.org" "Emacs.html" "Knowledge Management Tools.html" "gcc & g++.org" "The Structure and Intepretation of Computer Programs (SICP).org" "Bit torrent download server.html" "English Test.org" "CMake.org" "theme/" "Programming Language.html" "Schools & Tests/" "UNIX network programming.org" "Compile/" "Redis.org" "C++ IDE.html" "Linux Kernel.html" "English Test.html" "GPU Programming.org" "China/" "History.html" "China.html" "Linux Kernel/" "Knowledge Bank.html" "Problems Lists/" "xelatex_compile.sh" "Container/" "Graduate Projects/" "China:1912-1949.org" "Politics.html" "Politics/" "Careers/" "China 1840 to now.html" "Graduate Projects.html" "Knowledge Management Tools/" "Computer & Tech Related.org" "LISP.org" "Emacs/" "MongoDB/" "Operating Systems/" "Careers.html" "Container.html" "Computer Science.html" "Projects.html" "Compile.org" "OpenGL.org" "CS & Tech.org" "Books.org" "Database.org" "Books/" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.org" "egg.js.html" "C++ IDE.org" "Schools & Tests.org" "International Politics/" "Docker.html" "Computer Science.org" "Package Management.org" "Apache Server.html" "Emacs PDF extensions/" "The Structure and Intepretation of Computer Programs (SICP).html" "Graduate Projects.org" "Package Management.html" "What is Strategy by Michael E. Porter/" "Programming Language.org" "Emacs PDF extensions.html" "Public Politics.org" "Emacs PDF extensions.org" "OpenGL.html" "Books.html" "Database.html" "Shell.html" "Apache Server/" "Resume/" "Science & Technology.org" "Emacs LISP (elisp)/" "Computer & Tech Related.html" "Emacs Latex Extensions.org" "JavaScript.html" "Projects/" "China:1912-1949/" "JavaScript.org" "Web Server.html" "org-wiki.org" "Tools.org" "Shell/" "Org/" "Git.tex" "test2.org" "Resume.org" "Science & Technology.html" "C++ API design.html" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960/" "Redis/" "gcc & g++.html" "Terminal & Zsh/" "On China Henry Kissinger.log" "Git.pdf" "Redis.html" "imgs/" "TOEFL test.html" "Graphics Programming/" "Computer & Tech Related/" "On China Henry Kissinger.html" "Huawei CFO.org" "Apache Server.org" "UNIX network programming/" "Org.org" "NodeJS.html" "CMake/" "org-wiki/" "China.org" "test2.html" "TOEFL test.org" "English Test/" "Knowledge Management Tools.org" "Emacs Latex Extensions.html" "missfont.log" "Container.org" "International Politics.org" ".DS_Store" "index.html" "CS & Tech.html" "Org.html" "Docker/" "LISP/" "Huawei CFO/" "Tools/" "Docker.org" "Git.org" "C++ API design/" "DevOps/" "mocha/" "Public Politics/" "egg.js/" "China:1912-1949.html" "Node.html" "C++ API design.org" "Emacs LISP (elisp).org" "Email for Emacs/" "C++/" "Git.html" "NodeJS/" "Projects.org" "GPU Programming/" "China 1840 to now/" "index.org" "International Politics.html" "Resume.html" "What is Strategy by Michael E. Porter.org" "Email for Emacs.org" "Compile.html" "Database/" "Git.bbl" "Graphics Programming.html" "Email for Emacs.html" "Emacs LISP (elisp).html" "Prospective & Outline/" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.html" "Operating Systems.org" "Programming Language/" "Web Server.org" "The Structure and Intepretation of Computer Programs (SICP)/" "Shell.org" "../" "./")
 
- ("/Users/k/Documents/Books/" (23576 52056 0 0) "Principles Ray Dalio.pdf" "人大社图书书目（截止到2018.6月）.xls" "377efe3f24f9e7e493a578566ccb65b2.pdf" "TechBooks/" "IB/" "股权一本通.pdf" ".projectile" "On_China.epub" "重新定位 特劳特.pdf" "artofwar.pdf" "孙子兵法.pdf" "精力管理.pdf" "SUNZI2.pdf" "On China by Henry Kissinger.pdf.pdf" ".DS_Store" "Career/" "孙子兵法.txt" "../" "./")
+ ("/Users/k/Gitlab/" (23584 45927 27992 376000) "ebond-mobile-api/" "ebond-mobile-api.wiki/" "automatic_deployment_tools/" "devopsscripts/" "nodejs-learning/" "core2/" "wiki/" "ebondmedcore/" "ebondmed-design/" "security/" ".DS_Store" "ebondmed-infrastructure/" "../" "./")
 
- ("/Users/k/Documents/Books/TechBooks/" (23576 52057 0 0) "1.Introduction to Linux – A Hands on Guide.epub" "13.Advanced Bash-Scripting Guide.epub" "programming_in_scala_2nd.pdf" "mit-scheme-user.pdf" "SF20_GSC_ebook_enUS_082015.epub" "API Design for Cpp.pdf" "history of chez scheme.pdf" "Bash Beginners Guide-中文版.pdf" "21.The Linux Kernel Module Programming Guide.epub" "17.Pro Ubuntu Server Administration.epub" "8.Linux Shell Scripting Cookbook.epub" "sicp.epub" "ProgrammingScala.pdf" "2.Bash Guide for Beginners.epub" "19.Securing and Optimizing Linux_ The Ultimate Solution.epub" "sicp.pdf" "API Design for C++.pdf" "C++的API设计.pdf" "JavaScript权威指南_第6版.淘宝前端团队.pdf" "Node.js实战.pdf" "../" "./")
+ ("/Users/k/Orgs/" (23584 51137 239506 541000) "today.org~" "company.tex" "test.tex" ".git/" "company.html" "test.org" "company.org" "diary.org" "temp_" "test.pdf" "archivetoday.sh" "study.org" "company.log" "#ProblemsLog.org#" "today.org" "application.org" "ProblemsLog.org" "archive/" "learning.org" ".DS_Store" "../" "./")
 
- ("/Users/k/Documents/" (23576 39772 0 0) "GMAT阅读.pdf" "REG.pdf" "JuliaLearning/" "SRunLog/" "_WorkingQueue/" "PBCSF_quant/" "英语/" "MedProj/" "2018物理化学绪论课.pdf" "阿曦/" "Social/" "BloombergJournal/" "Private Thoughts/" "TTKN/" "A/" "Books/" "Final_Project/" "日程.xlsx" "2019Fall/" "Core/" ".DS_Store" "计划/" "Temp/" "_T/" "SoftwareTools/" "Proj/" "../" "./")
+ ("/Users/k/Gitlab/ebond-mobile-api/" (23584 42274 798250 85000) ".idea/" ".travis.yml" ".vscode/" ".git/" "run/" ".gitlab-ci.yml" ".eslintignore" "test.txt" "README.zh-CN.md" "clearenv.sh" "package.json" "package-lock.json" ".gitignore" "logs/" ".dockerignore" "appveyor.yml" "cleandb.sh" "env/" "README.md" "docs/" ".autod.conf.js" "node_modules/" ".eslintrc" "Dockerfile" "config/" "setenv.sh" "out/" "test/" "dump.rdb" "app/" ".DS_Store" "conf.json" "../" "./")
 
- ("/Users/k/Gitlab/ebond-mobile-api/" (23576 45333 578438 187000) ".idea/" ".travis.yml" ".vscode/" ".git/" "run/" ".eslintignore" "test.txt" "README.zh-CN.md" "clearenv.sh" "package.json" "package-lock.json" ".gitignore" "logs/" ".dockerignore" "appveyor.yml" "env/" "README.md" ".autod.conf.js" "node_modules/" ".eslintrc" "Dockerfile" "config/" "setenv.sh" "test/" "dump.rdb" "app/" "../" "./")
+ ("/Users/k/Gitlab/ebond-mobile-api/config/" (23584 42348 821828 51000) "plugin.js" "config.default.js" "../" "./")
 
- ("/Users/k/Desktop/" (23576 41655 0 0) "~$合作框架协议.docx" "附件3：2019届综合论文训练课题统计表.xlsx" "附件3：2019届综合论文训练课题统计表.xls" "GRE GMAT LSAT全部2772阅读真题.docx" "Screen Shot 2018-12-16 at 3.25.41 PM.png" "kissinger-2011-on-china.pdf" "Book2.xlsx" "词汇570.pdf" "spiderTPO writing/" "On China Henry Kissinger.tex" "collection.apkg" "UnionFS - Wikipedia.html" "MotionCorrBrowser/" "Corporation Outline w:t cases.docx" "test.py" "GRE GMAT LSAT全部2772阅读真题.pdf" "ps wt12.12.docx" "spiderTPO/" "TE-2018-12-01.html" "Corporation Outline w:t cases.pdf" "Registration Confirmation.pdf" "我的笔记本 - Microsoft OneNote Online.pdf" "口语模板.pdf" ".DS_Store" "../" "./")
+ ("/Users/k/Gitlab/wiki/" (23583 57240 98354 884000) "Gitlab-runner/" "OpenGL/" "Terminal & Zsh.org" "C++.org" "What is Strategy by Michael E. Porter.html" "DevOps.org" "mocha.org" "Git/" "CMake.html" "C++ IDE/" "Careers.org" "Knowledge Bank/" "What is Strategy by Michael E. Porter.log" "Operating Systems.html" "Politics.org" "Schools & Tests.html" "egg.js.org" "Linux Kernel.org" "Graphics Programming.org" "CS & Tech/" "Web Server/" "C++ API design.log" "GPU Programming.html" "Prospective & Outline.html" "Emacs Latex Extensions/" "Gitlab-runner.org" "Huawei CFO.html" "LISP.html" "MongoDB.html" "On China Henry Kissinger/" "Terminal & Zsh.html" ".git/" "Emacs Env Settings.org" "Gitlab-runner.html" "MongoDB.org" "Node/" "org-wiki.html" "gcc & g++/" "China 1840 to now.org" "JavaScript/" "test2/" "TOEFL test/" "Emacs Env Settings.html" "DevOps.html" "README.org" "Emacs Env Settings/" ".gitlab-ci.yml" "Bit torrent download server.org" "C++.html" "On China Henry Kissinger.org" "NodeJS.org" "UNIX network programming.html" "Bit torrent download server/" "index/" "Prospective & Outline.org" "Package Management/" "Problems Lists.html" "Tools.html" "History.org" "mocha.html" "Node.org" "Public Politics.html" "Emacs.org" "History/" "Problems Lists.org" "Science & Technology/" "Computer Science/" "Knowledge Bank.org" "Emacs.html" "Knowledge Management Tools.html" "publish.el" "gcc & g++.org" "The Structure and Intepretation of Computer Programs (SICP).org" "Bit torrent download server.html" "English Test.org" "CMake.org" "theme/" "Programming Language.html" "Schools & Tests/" "UNIX network programming.org" ".gitignore" "Compile/" "Redis.org" "C++ IDE.html" "Linux Kernel.html" "English Test.html" "GPU Programming.org" "China/" "History.html" "China.html" "Linux Kernel/" "Knowledge Bank.html" "Problems Lists/" "xelatex_compile.sh" "Container/" "Graduate Projects/" "China:1912-1949.org" "Politics.html" "Politics/" "Careers/" "China 1840 to now.html" "Graduate Projects.html" "Knowledge Management Tools/" "Computer & Tech Related.org" "LISP.org" "Emacs/" "MongoDB/" "Operating Systems/" "Careers.html" "Container.html" "Computer Science.html" "Projects.html" "Compile.org" "OpenGL.org" "CS & Tech.org" "Books.org" "Database.org" "Books/" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.org" "egg.js.html" "C++ IDE.org" "Schools & Tests.org" "International Politics/" "Docker.html" "Computer Science.org" "Package Management.org" "Apache Server.html" "Emacs PDF extensions/" "The Structure and Intepretation of Computer Programs (SICP).html" "Graduate Projects.org" "Package Management.html" "What is Strategy by Michael E. Porter/" "Programming Language.org" "Emacs PDF extensions.html" "Public Politics.org" "Emacs PDF extensions.org" "OpenGL.html" "Books.html" "Database.html" "Shell.html" "Apache Server/" "Resume/" "Science & Technology.org" "Emacs LISP (elisp)/" "Computer & Tech Related.html" "Emacs Latex Extensions.org" "JavaScript.html" "Projects/" "China:1912-1949/" "JavaScript.org" "Web Server.html" "org-wiki.org" "Tools.org" "Shell/" "Org/" "test2.org" "Resume.org" "Science & Technology.html" "C++ API design.html" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960/" "Redis/" "gcc & g++.html" "Terminal & Zsh/" "On China Henry Kissinger.log" "Redis.html" "imgs/" "TOEFL test.html" "Graphics Programming/" "Computer & Tech Related/" "On China Henry Kissinger.html" "Huawei CFO.org" "Apache Server.org" "UNIX network programming/" "Org.org" "NodeJS.html" "CMake/" "org-wiki/" "China.org" "test2.html" "TOEFL test.org" "English Test/" "LICENSE" "Knowledge Management Tools.org" "Emacs Latex Extensions.html" "missfont.log" "Container.org" "International Politics.org" "index.html" "CS & Tech.html" "Org.html" "Docker/" "LISP/" "Huawei CFO/" "Tools/" "favicon.ico" "Docker.org" "Git.org" "C++ API design/" "DevOps/" "mocha/" "Public Politics/" "egg.js/" "China:1912-1949.html" "Node.html" "C++ API design.org" "Emacs LISP (elisp).org" "Email for Emacs/" "C++/" "Git.html" "NodeJS/" "Projects.org" "GPU Programming/" "China 1840 to now/" "index.org" "International Politics.html" "Resume.html" "What is Strategy by Michael E. Porter.org" "Email for Emacs.org" "Compile.html" "Database/" "Graphics Programming.html" "Email for Emacs.html" "Emacs LISP (elisp).html" "Prospective & Outline/" "Recursive Functions of Symbolic Expressions and Their Computation by Machine -- McCarthy 1960.html" "Operating Systems.org" "Programming Language/" "Web Server.org" "The Structure and Intepretation of Computer Programs (SICP)/" "Shell.org" "../" "./")
 
- ("/Users/k/Documents/Final_Project/" (23576 31180 0 0) "MotionCor2-UserManual-09-13-2018.pdf" "Design_document.tex" "Design_document.pdf" "MotionCor2_1.2.1.zip" "Design_document.org" "motioncorr_v2.1.tar" ".DS_Store" "MotionCor2_1.2.1/" "motioncorr_v2.1/" "../" "./")
+ ("/Users/k/Desktop/" (23583 51642 0 0) "~$合作框架协议.docx" "Screen Shot 2018-12-23 at 9.55.34 PM.png" "附件3：2019届综合论文训练课题统计表.xlsx" "附件3：2019届综合论文训练课题统计表.xls" "46f700042291d5ac7c57.jpeg" "GRE GMAT LSAT全部2772阅读真题.docx" "kissinger-2011-on-china.pdf" "Book2.xlsx" "词汇570.pdf" "spiderTPO writing/" "「LP？OK》；“『LPOi j.apkg" "UnionFS - Wikipedia.html" "MotionCorrBrowser/" "Corporation Outline w:t cases.docx" "test.py" "GRE GMAT LSAT全部2772阅读真题.pdf" "ps wt12.12.docx" "spiderTPO/" "TE-2018-12-01.html" "Screen Shot 2018-12-23 at 9.24.11 PM.png" "Corporation Outline w:t cases.pdf" "Registration Confirmation.pdf" "我的笔记本 - Microsoft OneNote Online.pdf" "口语模板.pdf" ".DS_Store" "Screen Shot 2018-12-23 at 9.56.59 PM.png" "../" "./")
+
+ ("/Users/k/Documents/Books/" (23583 18203 0 0) "Principles Ray Dalio.pdf" "人大社图书书目（截止到2018.6月）.xls" "377efe3f24f9e7e493a578566ccb65b2.pdf" "TechBooks/" "IB/" "股权一本通.pdf" ".projectile" "On_China.epub" "重新定位 特劳特.pdf" "artofwar.pdf" "孙子兵法.pdf" "精力管理.pdf" "SUNZI2.pdf" "On China by Henry Kissinger.pdf.pdf" ".DS_Store" "Career/" "孙子兵法.txt" "../" "./")
+
+ ("/Users/k/Documents/Books/TechBooks/" (23583 18203 0 0) "1.Introduction to Linux – A Hands on Guide.epub" "13.Advanced Bash-Scripting Guide.epub" "programming_in_scala_2nd.pdf" "mit-scheme-user.pdf" "SF20_GSC_ebook_enUS_082015.epub" "API Design for Cpp.pdf" "Bash-Beginners-Guide.pdf" "history of chez scheme.pdf" "Bash Beginners Guide-中文版.pdf" "21.The Linux Kernel Module Programming Guide.epub" "程序员的自我修养.pdf" "17.Pro Ubuntu Server Administration.epub" "mastering-cmake.pdf" "unix-network-programming-vol-1-3rd-ed.pdf" "8.Linux Shell Scripting Cookbook.epub" "sicp.epub" "Linux Kernel Development, 3rd Edition.pdf" "ProgrammingScala.pdf" "2.Bash Guide for Beginners.epub" "19.Securing and Optimizing Linux_ The Ultimate Solution.epub" "sicp.pdf" "API Design for C++.pdf" "C++的API设计.pdf" "JavaScript权威指南_第6版.淘宝前端团队.pdf" "Node.js实战.pdf" "../" "./")
+
+ ("/Users/k/Gitlab/mywiki/" (23583 55277 190914 692000) ".git/" ".gitlab-ci.yml" "public/" ".DS_Store" "../" "./")
+
+ ("/Users/k/GitHub/OpenGLTutorial/" (23583 25423 970472 160000) "my-learning/" "opengl-tutorial-org/" ".DS_Store" "../" "./")
+
+ ("/Users/k/GitHub/OpenGLTutorial/my-learning/test2/" (23583 25679 417513 342000) "build/" "test2.cpp" "SimpleFragmentShader.fragmentshader" "SimpleVertexShader.vertexshader" "CMakeLists.txt" "screenshots/" "tutorial02_red_triangle" "../" "./")
+
+ ("/Users/k/GitHub/OpenGLTutorial/my-learning/" (23583 25577 518436 802000) "test2/" "external/" "test1/" ".DS_Store" "../" "./")
+
+ ("/Users/k/GitHub/OpenGLTutorial/my-learning/test1/" (23583 25640 238189 320000) "build/" "test1.cpp" "CMakeLists.txt" "../" "./")
+
+ ("/Users/k/GitHub/OpenGLTutorial/my-learning/build/" (23583 11342 412273 135000) "CMakeCache.txt" "cmake_install.cmake" "Makefile" "CMakeFiles/" "../" "./")
+
+ ("/Users/k/GitHub/OpenGLTutorial/my-learning/external/" (23582 50200 447 92000) "glew-2.1.0/" "glm-0.9.9.0/" "glfw-3.2.1.zip" "glew/" "glew-2.1.0.zip" ".DS_Store" "CMakeLists.txt" "glm-0.9.9.0.tar.gz" "glfw-3.2.1/" "../" "./")
+
+ ("/Users/k/GitHub/" (23582 47682 509439 247000) "thumbup/" "OpenGLTutorial/" "BFinance/" "PyMotionCorr/" "KnowledgeManagement/" "test.py" "HiCViewer/" "emacsenv/" "ebondmedcore/" "UnpProgramming/" "models.py" ".DS_Store" "nodejslearn/" "DjangoTutorial/" "SICP/" "ebondmed-infrasturcture/" "../" "./")
+
+ ("/Users/k/GitHub/HiCViewer/" (23582 47396 434755 828000) ".git/" "CMakeLists.txt" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/app/model/" (23581 58474 489017 567000) ".tern-port" "patients.js" "users.js" "sessions.js" "hospitals.js" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/test/app/model/" (23581 61604 789713 538000) "model.test.js" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/test/app/" (23581 60107 667361 469000) "model/" "controller/" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/test/app/controller/" (23581 63317 271461 370000) "sessions.test.js" "home.test.js" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/test/" (23570 11996 460334 167000) "app/" "../" "./")
+
+ ("/Users/k/Documents/Final_Project/" (23581 4162 0 0) "MotionCor2-UserManual-09-13-2018.pdf" "Design_document.tex" "Requirement Docs.pdf" "Design_document.pdf" "MotionCor2_1.2.1.zip" "Design_document.bbl" "Design_document.org" "BackupPlan/" "Design_document.html" "motioncorr_v2.1.tar" ".DS_Store" "MotionCor2_1.2.1/" "motioncorr_v2.1/" "../" "./")
+
+ ("/Users/k/Documents/Final_Project/BackupPlan/" (23581 4162 0 0) "HiC Viewer Docs.pdf" "hicviewer.org" "hicviewer.html" "../" "./")
+
+ ("/Users/k/Downloads/HiC3DViewer/hicViewer/" (23567 11833 0 0) "tmp/" "data/" "spatialModel.py" "templates/" "chrMesh.py" "static/" "__init__.py" "ipopt.out" ".DS_Store" "../" "./")
+
+ ("/Users/k/Downloads/HiC3DViewer/" (23567 11832 0 0) "hic3dviewer.wsgi" "hicViewer/" ".DS_Store" "../" "./")
+
+ ("/Users/k/Downloads/" (23579 55415 101387 166000) "姜波克《国际金融新编》（第5版）笔记和课后习题（含考研真题）详解.pdf" "WUSTL-Kira-typing.docx" "¿Î±¾Ï°Ìâ½â´ð.pdf" "TOFEL寂静/" "HEC Essay.docx" "四大实习一本通.pdf" "wxWidgets-3.1.1.tar.bz2" "1147211-note-strategique-hec-juin-2016-original.pdf" "股票量化交易策略的研究及MATLAB的实现_孙伟.caj" "NeteaseMusic_1.5.10_636_web.dmg" "39-809210-WRDS(沃顿）用户指南 (1).doc" "卡霸-考研政治选择题+知识点解析.apkg" "quickview.html" "u=2277812963,3353139704&fm=26&gp=0.jpg" "彭博商业周刊-2018-11-19.pdf" "backup/" "Postman-osx-6.6.1.zip" "产品-高频词汇/" "彭博商业周刊-2018-11-26.pdf" "ideaIC-2018.3.1.dmg" "2004112584941225.zip" "TOEFL.apkg" "MIM guidelines.pdf" "TOEFL口语语料库 完美重排版.pdf" "environment.txt" "附件3：2018届综合论文训练课题统计表.xls" "GRE%26GMAT阅读难句教程（高清）-杨鹏.pdf" "a9b2589902 (1).pdf" "SSRN-id3264912.pdf" "FileZilla_3.37.3_macosx-x86.app.tar.bz2" "1538285495637.xlsx" "HSG_China_Broschure.pdf" "Adobe Zii.app/" "EssaySamples.pdf" "2004112584941225/" "21a3fdbdc543afec.csv" "FireShot/" "700-800.zip" "彭博商业周刊-2018-10-29 (1).pdf" "ESSEC-master in management(GE).zip" "wxWidgets-3.1.1/" "10.Shell ScriptingExpert Recipes for Linux, Bash, and More.pdf" "ChaseDream_Business_School_Guide_Tuck.pdf" "2017+Employment+Report+Final_WEB.pdf" "20180313185314_2866.rar" "国际金融.xmind" "1002170503161609b3ec191462.pdf" "GBUS 600 Course Syl sp 09 Final.doc" "285_GMAT_Idioms.apkg" "24iPhoneiPhone WallpapersWallpapers1.jpg" "Answers-to-All-TOEFL-Essay-Questions.pdf" "近二十年来国内政治心理学研究进展述评.pdf" "TE-2018-12-01-PDF.zip" "emacs-26.1.tar.gz.sig" "恒温槽装配和性能测试.ppt" "现代金融学的历史_一位目击者的叙述_默顿_米勒.pdf" "罗斯《公司理财》（第9版）笔记和课后习题详解_中文版.pdf" "ZL_SO_MB_Sprachen_en.pdf" "MonokaiChoice-Multi.apkg" "10.Shell ScriptingExpert Recipes for Linux, Bash, and More (1).pdf" "16.17年热点/" "FCF_10th_edition_Solutions_Manual.docx" "MBF Employment Statistic 2016 - Autumn 2018.pdf" "1115起ChaseDream数学寂静原始稿（共86题）1118-1101.docx" "Great Application Essays for Business School.pdf" "README.md" "13086-17794-1-PB.pdf" "why-amazon-acquired-pillpack.pdf" "brochure_MiM_2018_BD.pdf" "TE-2018-12-01.pdf" "39-809210-WRDS(沃顿）用户指南.doc" "英语语法大全（上下）-张道真.pdf" "~$15起数学讨论稿（更新至18题，1116_0200）.docx" "写作题库分类.xls" "HiC3DViewer/" "~$15起ChaseDream数学寂静原始稿（共68题）1117-300.docx" "431真题－建议搜索查找学校，已经尽力整理了/" "ZL_SO_MB_AnerkannterAbschluss_en.pdf" "_MG_7353证件照 (1) - Copy.jpg" "2014012459_undergraduate major_en.pdf" "1102起ChaseDream数学寂静讨论稿（更新至191题）1113-1910docx.pdf" "docker_practice.pdf" "solarized/" "Brook.dmg" "Morningstar_Equity_Research_Methodology_Guide_Final.pdf" "1003082310878f4d82ec1175cf.rar" "林超伦《实战口译》学生用书.pdf" "Librarian Colloquium Presentation.ppt" "火狐搜索起始页_files/" "emacs 学习/" "InterntlStudentEmployers16-17.pdf" "GMAT 复习计划2013(必胜）.xlsx" "2014012459_undergraduate minor_en.pdf" "基于门限模型的量化投资统计套利策略研究_罗文晋.caj" "Breaking Into Wall Street - The 400 Most Common Investment Banking Interview Questions.pdf" "2019年肖秀荣1000题（下册：解析分册）-unlocked.pdf.crdownload" "User Guide IDA Online Application (for Applicants).pdf" "IB.zip" "ChaseDream_Business_School_Guide_HBS.pdf" "screencapture-blog-csdn-net-nya0731-article-details-79743560-2018-12-06-19_53_18.pdf" ".localized" "_MG_7353证件照 (1) - Copy (1).jpg" "ETS官方满分作文集.zip" "tcal_hengwencao.pdf" "GRE.apkg" "Dangdang/" "ChaseDream_Business_School_Guide_Darden.pdf" "8808425_2018111314572218gzo.pdf" "emacs 学习.rar" "环球科学-2018-10.pdf" "MH_Anxiety_Solving+Problems.pdf" ".DS_Store" "Emacs 中文教程.pdf" "Investment-Weekly-External-7.9.18.pdf" "task5 自己拓展部分语料总结 .docx" "Career.zip" "a9b2589902.pdf" "公司理财英文版第10版课后习题答案.pdf" "火狐搜索起始页.html" "SF20_GSC_ebook_enUS_082015.mobi" "Focus071218.pdf" "major points from  OG.pdf" "老美185.pdf" "马鸿鹏_一页版v0.6.pdf" "HiC3DViewer.zip" "3D-tracking-analyser-master.zip" "document-1080561101.pdf" "ESSEC申请指导-instructions-candidature.pdf" "ChaseDream_Business_School_Guide_Wharton.pdf" "HEC Essay (1).docx" "078iPhone Wallpapers-iPhone WallpapersvPGA2mTiPhoneiPhone WallpapersWallpapers1.jpg" "solarized.zip" "Esignature_QSG.pdf" "report (3).pdf" "彭博商业周刊-2018-11-12.pdf" "../" "./")
+
+ ("/Users/" (23579 36837 435544 472000) "k/" "Shared/" ".localized" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/app/controller/" (23580 47465 413151 556000) ".tern-port" "home.js" "users.js" "sessions.js" "smscodesessions.js" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/docs/" (23580 47892 174285 689000) "documentation.tex" ".DS_Store" "documentation.pdf" "documentation.bbl" "documentation.html" "documentation.org" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/app/service/" (23580 51912 274817 567000) "users.js" "sessions.js" "smscodesessions.js" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/app/" (23580 47465 415045 91000) "service/" "model/" "public/" "router.js" "controller/" "middleware/" "../" "./")
+
+ ("/Users/k/GitHub/UnpProgramming/intro/" (23579 22000 341024 394000) "daytimetcpsrvv6.c" "daytimetcpsrv2.c" "daytimetcpcliv6.c" "daytimetcpcli3.c" "byteorder.c" "daytimetcpsrv1.c" "daytimetcpcli.o" "daytimetcpsrv.c" "truss.solaris.2.6" "daytimetcpcli2.c" "truss.unixware.2.1" "daytimetcpcli" "Makefile" "daytimetcpsrv.lc" "daytimetcpcli.c" "daytimetcpcli1.c" "daytimetcpsrv3.c" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/app/middleware/" (23579 30965 553518 471000) "tokenRequired.js" "errorHandler.js" "../" "./")
+
+ ("/Users/k/Gitlab/ebond-mobile-api/app/public/" (23575 18986 458499 986000) "../" "./")
+
+ ("/Users/k/GitHub/UnpProgramming/" (23579 19729 347805 853000) "debug/" "sigio/" "ioctl/" "aclocal.m4" "Makefile.in" "nonblock/" "bcast/" "select/" "Make.defines.in" "traceroute/" "config.log" "sctp/" "libfree/" "lib/" "sock/" "threads/" "VERSION" "libunp.a" "config.sub" "config.status" "tcpcliserv/" "configure.in" "README" "key/" "server/" "config.guess" "oob/" "config.h.in" "mysdr/" "inetd/" "ssntp/" "libgai/" "streams/" "Makefile" "sockopt/" "sparc64-unknown-freebsd5.1/" "Make.defines" "rtt/" "mcast/" "configure" "config.h" "test/" "DISCLAIMER" "intro/" "route/" ".DS_Store" "names/" "ipopts/" "unixdomain/" "ping/" "install-sh" "udpcksum/" "icmpd/" "udpcliserv/" "advio/" "libroute/" "../" "./")
 
  ("/Users/k/Apps/pdf-tools/pdf-tools-0.90/" (23575 49260 0 0) "pdf-tools-pkg.el" "pdf-isearch.el" "pdf-outline.el" "pdf-util.el" "epdfinfo" "pdf-misc.el" "pdf-occur.el" "pdf-sync.el" "pdf-history.el" "pdf-dev.el" "pdf-info.el" "README" "pdf-loader.el" "pdf-virtual.el" "pdf-tools.el" "pdf-view.el" "pdf-annot.el" "pdf-links.el" "pdf-cache.el" "../" "./")
 
@@ -87,20 +169,8 @@
 
  ("/Users/k/Documents/Books/IB/" (23575 51954 0 0) "what-is-leadership.pdf" "mckinsey.pdf" "careers_in_venture_capital.pdf" "The Vault MBA Career Bible.pdf" "What Makes a Leader.pdf" "careers_in_asset_management_retail_brokerage.pdf" "careers_in_investment_banking.pdf" "What is Strategy.pdf" "careers_in_management_consulting.pdf" "morgan_stanley.pdf" "jpmorgan_chase.pdf" "../" "./")
 
- ("/Users/k/Gitlab/ebond-mobile-api/app/model/" (23575 42357 837287 994000) ".tern-port" "patients.js" "users.js" "sessions.js" "hospitals.js" "../" "./")
-
- ("/Users/k/Gitlab/ebond-mobile-api/app/service/" (23575 44787 249715 266000) "users.js" "sessions.js" "smscodesessions.js" "../" "./")
-
  ("/Users/k/Google Drive/" (23575 32249 478601 43000) "GMAT Mock Exam 6 First Attempt 680.pdf" "Chrome 密码.csv" "M/" "Capture.PNG" "Readings/" "升学SWOT分析.xmind" "T/" "Capture2.PNG" "G/" "I/" ".tmp.drivedownload/" "R/" "Icon
 " ".DS_Store" "Z_Before/" "考试_申请_计划.xmind" "../" "./")
-
- ("/Users/k/Gitlab/ebond-mobile-api/app/controller/" (23575 43551 633633 862000) ".tern-port" "home.js" "users.js" "sessions.js" "smscodesessions.js" "../" "./")
-
- ("/Users/k/Gitlab/ebond-mobile-api/app/" (23575 41189 300112 556000) "service/" "model/" "public/" "router.js" "controller/" "middleware/" "../" "./")
-
- ("/Users/k/Gitlab/ebond-mobile-api/config/" (23570 12299 841949 707000) "plugin.js" "config.default.js" "../" "./")
-
- ("/Users/k/Gitlab/" (23570 12013 669976 807000) "ebond-mobile-api/" "nodejs-learning/" "core2/" "ebondmedcore/" "ebondmed-design/" "security/" ".DS_Store" "ebondmed-infrastructure/" "../" "./")
 
  ("/Users/k/.emacs.d/scheme/" (23574 22060 899301 942000) "test.scm~" "xscheme.el" "test.scm" "../" "./")
 
@@ -123,8 +193,6 @@
  ("/Users/k/Codes/DockerLearn/official_tutorial/" (23568 48205 338202 830000) "docker-compose.yml" "app.py" "docker-compose.yml~" "Dockerfile~" "Dockerfile" "requirements.txt" "apps.py~" "../" "./")
 
  ("/Users/k/Codes/DockerLearn/" (23567 29135 934442 181000) "official_tutorial/" "../" "./")
-
- ("/Users/" (23505 25697 121875 989000) "k/" "Guest/" "Shared/" ".localized" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

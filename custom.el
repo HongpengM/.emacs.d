@@ -53,6 +53,9 @@
 ;; Boost with geiser in order to avoid org-wiki-export-html problems
 (setq geiser-active-implementations '(mit))
 
+;; Install pdf-tools
+;;(pdf-tools-install)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -70,8 +73,11 @@
  '(markdown-command "/usr/local/bin/macdown")
  '(package-selected-packages
    (quote
-    (org2ctex pdf-tools htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode org-wiki markdown-mode magit projectile web-mode elpy)))
- '(safe-local-variable-values (quote ((encoding . utf-8)))))
+    (cmake-mode htmlize org-wiki nvm js-comint dockerfile-mode ensime paredit epm geiser julia-mode company-tern xref-js2 js2-refactor js2-mode org-wiki markdown-mode magit projectile web-mode elpy)))
+ '(safe-local-variable-values
+   (quote
+    ((org-download-image-dir . "~/org-wiki/C++ API design/")
+     (encoding . utf-8)))))
 
 
 

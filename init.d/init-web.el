@@ -18,19 +18,6 @@
   :require (restclient company)
   :config (add-to-list 'company-backends 'company-restclient))
 
-;; elnode
-
-(req-package elnode
-  :ensure t
-  :commands (elnode-stop elnode-start))
-
-;; pick mode
-
-(req-package peek-mode
-  :ensure t
-  :commands peek-mode
-  :require elnode
-  :config (elnode-start 'peek-mode-dispatcher-handler :port 8008 :host "localhost"))
 
 ;; xml generation dsl
 

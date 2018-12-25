@@ -29,30 +29,51 @@
 							 :background "#f44242"
 							 :weight bold))
 					   ("REPORT" . org-todo)
-					   ("BUG" . (:foreground "yellow"
-								 :background "red"
-								 :weight bold
-								 ))
-					   ("KNOWNCAUSE" . (:foreground "white"
-									:background "#cb4df9"
-									:weight bold))
-					  
+					   ("BUG" .
+					    (:foreground "yellow"
+							 :background "red"
+							 :weight bold))
+					   ("KNOWNCAUSE" .
+					    (:foreground "white"
+							 :background "#cb4df9"
+							 :weight bold))
+					   ("VERY IMPORTANT!" .
+					    (:foreground "red"
+							 :background "yellow"
+							 :weight bold))
+					   ("SLEEP" .
+					    (:foreground "blue"
+							 :background "#95d5f9"
+							 :weight bold))
 					   ("CANCELED" . 
 					    (:foreground "blue"
 							 :background "#95d5f9"
 							 :weight bold)))) 
-	    (setq org-agenda-files '("~/Orgs/today.org" "~/Orgs/company.org" "~/Orgs/learning.org"
+	    (setq org-agenda-files '("~/Orgs/today.org"
+				     "~/Orgs/company.org"
+				     "~/Orgs/learning.org"
+				     "~/Orgs/application.org"
 				     "~/org-wiki")) 
 	    (define-key org-mode-map (kbd "C-M-\\") 'org-indent-region)))
 
 (setq org-todo-keywords '((sequence "TODO(t)" "WAIT(w@)" "|" "DONE(d)") 
 			  (sequence "REPORT(r@)" "BUG(b@)" "KNOWNCAUSE(k@)" "|" "FIXED(f)") 
-			  (sequence "DELAYED(e@)" "|" "CANCELED(c)")))
-
+			  (sequence "DELAYED(e@)" "|" "CANCELED(c)")
+			  (sequence "VERY IMPORTANT!(v@)" "|" "SLEEP(s@)")))
+     
+      
+;; org-mode javascript extensions
+(req-package 
+  ob-js)
+(require 'org-download)
 (org-babel-do-load-languages 'org-babel-load-languages '(
 							 ;; ...
-							 (python . t) 
+							 (python . t)
+							 (js . t)
 							 (scheme . t)))
+  (add-to-list 'org-babel-load-languages '(js . t))
+  (org-babel-do-load-languages 'org-babel-load-languages org-babel-load-languages)
+  (add-to-list 'org-babel-tangle-lang-exts '("js" . "js"))
 
 ;; (load "~/.emacs.d/init.d/ob-scheme.el")
 
@@ -74,8 +95,10 @@
 ;;  :bind (("C-c p" . org-pomodoro)))
 ;;
 
-;; org-mode javascript extensions
-(req-package 
-  ob-js)
+
+
+(req-package org-download
+  :ensure t
+  :force t)
 
 (provide 'init-org)
